@@ -22,10 +22,8 @@ function Main()
     }
     
     var blanksFolder = '/p/Team Stores/Pictures/'; //blank product images 
-    var str1 = '/c/Users/';
-    var user = Window.prompt('Enter your user name found in C:\\Users');
-    var str2 = '/Desktop/GeneratedImages/';
-    var destFolder = str1.concat(user, str2); 
+
+    var destFolder = Folder.desktop + '/Generated Images/';
     var f = new Folder(destFolder);
     if(!f.exists){
         f.create();
@@ -138,11 +136,13 @@ function StoreSchoolData(dataString){
        
         if (currentSchool.cmh == "0")
         {
-             $.writeln("currentCMH: " + currentSchool);
+
+            $.writeln("currentCMH: " + currentSchool.CMH);
              $.writeln("Skip");
         }
         else
-        {           
+        {   
+            $.writeln("currentCMH: " + currentSchool.CMH);
             CreateProductPictures(currentSchool);
             $.writeln("");
         }
@@ -165,22 +165,14 @@ function StoreSchoolData(dataString){
     function CreateProductPictures(schoolNames) {  
         //for each product
             
-            schoolNames.mascotImage.replace(".PNG", ".png");
-            schoolNames.apparelImage.replace(".PNG", ".png");
-            schoolNames.headwearImage.replace(".PNG", ".png");
-            /*
-        currentSchoolColor = currentSchool.primary;
-        currentMascot = currentSchool.mascot;
-        currentMascotImage = currentSchool.mascotImage.replace(".PNG",".png");
-        currentApparelEmb = currentSchool.apparelImage.replace(".PNG",".png");
-        currentHeadwearEmb = currentSchool.headwearImage.replace(".PNG",".png");
-        */
-        
-                
+        schoolNames.mascotImage = schoolNames.mascotImage.replace(".PNG", ".png");
+        schoolNames.apparelImage = schoolNames.apparelImage.replace(".PNG", ".png");
+        schoolNames.headwearImage = schoolNames.headwearImage.replace(".PNG", ".png");
+    
             for (ip = 0; ip < products.length; ip++)
             {
                 var currentProduct = ProductInfo[products[ip]];
-                $.writeln("");
+
                 $.writeln("currentProduct: " + currentProduct.name);
 
                 var allProductColors = currentProduct.allColors;
@@ -228,21 +220,15 @@ function StoreSchoolData(dataString){
 
                            skipCheck = true;
                            }
-                       
-                       $.writeln("///////////// Up to 1st getfile check/////////////");         
-                       
+
                        var currentDesignImage = GetFileName(["design",currentDesign],schoolNames.CMH,currentProduct,currentProductColor,currentDesign,designsFolder,schoolNames.mascotImage,schoolNames.mascot,store,schoolNames.apparelImage,schoolNames.headwearImage);
-                       $.writeln("currentDesignImage: " + currentDesignImage);
-                       
-                       
+
                        if (currentDesignImage.indexOf("light") != -1 && currentDesignImage.indexOf("blank") == -1){ //********************ORIGNALLY COMMENTED OUT currentDesignImage.indexof("light") != -1********************************
                            $.writeln("///////// Entering Save Design function ///////////");
                            SaveDesign(currentDesignImage,currentDesign,schoolNames.CMH,destFolder,blanksFolder,designsFolder,store);
                            
                            }
-                       
-                       $.writeln("///////////// Passed Save Design if statement/////////////");
-                       
+
                        if (skipCheck == false)  //The file doesn't already exist, so it needs to be created. Otherwise, skip creating the picture. No need to do more work than required. This does mean you will need to delete the picture if you want to recreate it.
                        {    
                              $.writeln("///////////// Up to Doc /////////////");
@@ -258,7 +244,7 @@ function StoreSchoolData(dataString){
 
                             //var designImage = getImage(doc,GetFileName(["design",currentDesign],currentCMH,currentProduct,currentProductColor,currentDesign,designsFolder,currentMascotImage,currentMascot,store,currentApparelEmb,currentHeadwearEmb),"designImage");
 
-                            if(currentProduct.designLocationInformation[currentProductColor] == undefined) {
+                          if(currentProduct.designLocationInformation[currentProductColor] == undefined) {
                                 var productDimensionsInfo = currentProduct.designLocationInformation["all"];
                             }
                             else {                        
@@ -266,17 +252,17 @@ function StoreSchoolData(dataString){
                             }
                                 
                             if(currentProduct.designLocationInformation["all"] != undefined && currentProduct.designLocationInformation["all"].name.indexOf ("bag") > -1){
-                                
-                                //$.writeln("ball pocket");
-                                var designImage2 = getImage(doc,schoolNames.mascotImage,"mascotImage");
+
+                            var designImage2 = getImage(doc,schoolNames.mascotImage,"mascotImage");
+
                                 ResizeEverything(productImage,designImage2,currentProduct.designLocationInformation["bag-ball"]);
                                 PositionEverything(productImage,designImage2,currentProduct.designLocationInformation["bag-ball"]);
                             }
 
                             if(currentProduct.designLocationInformation["all"] != undefined && currentProduct.designLocationInformation["all"].name.indexOf ("multiLocations") > -1){
-                                
-                                //$.writeln("ball pocket");
-                                var designImage2 = getImage(doc,currentDesignImage,"designImage");
+
+                              var designImage2 = getImage(doc,currentDesignImage,"designImage");
+                              
                                 ResizeEverything(productImage,designImage2,currentProduct.designLocationInformation["secondLocation"]);
                                 PositionEverything(productImage,designImage2,currentProduct.designLocationInformation["secondLocation"]);
                             }
@@ -319,11 +305,9 @@ function StoreSchoolData(dataString){
         //$.writeln("Current Process: " + currentProduct.process);
         
         if(type[0] == "design")
-        {
-            //$.writeln(ProductInfo.all.overrides.dark);
-            // $.writeln(currentProduct.process);
-            //$.writeln(currentProduct.process);
-            
+
+        {      
+
             var stitchColor = currentProductColor;
             
             if(currentProduct.overrides != undefined)//|| currentProduct.overrides.light != undefined || currentProduct.overrides.dark != undefined))
@@ -359,16 +343,18 @@ function StoreSchoolData(dataString){
                         break;
                     case "mascot":
                         fileName = currentMascotImage; //$.writeln("mascot name: " + fileName); 
-                        //$.writeln("mascot fileName: " + fileName);
-                        return fileName; 
+
+                       return fileName; 
+
                         break;
                     case "script":
                     case "block":
                     case "adidas":
                     case "collegiate":
                         fileName = folderPath.replace("WhiteOutlingPngs\\","Fundraising Products\\Mascot Images\\").replace("PNGs","Public Embroidery") + currentMascot + "_" + type[1] + "_" + stitchColor + ".png";  
-                        //$.writeln("emb fileName: " + fileName);
-                        return fileName; 
+
+                       return fileName; 
+
                         break;
                     case "team" :  
                         //fileName = folderPath + currentCMH + "_" + type[1] + ".png";
@@ -399,8 +385,9 @@ function StoreSchoolData(dataString){
                         //$.writeln("store: " + store);
                         //////END DEV//////
                         if(store == "team") {fileName.replace(".png",".jpg");}
-                        //$.writeln("Blank fileName: " + fileName);
-                        return fileName; 
+
+                       return fileName; 
+
                         break;
                     case "dest": 
                         switch(currentProduct.process)
@@ -415,13 +402,12 @@ function StoreSchoolData(dataString){
                                     case "headwear":
                                         //$.writeln("1"); 
                                         fileName = folderPath + currentCMH + "_" + currentProduct.name.replace("p","") + "_" + ColorAdjust("filename",currentProductColor,currentProduct) + "_" + String(currentDesign) + ".jpg";
-                                        //$.writeln("team dest fileName:" + fileName);
-                                        return fileName;
+
+                                       return fileName;
                                         break;
                                     default:
-                                        //$.writeln("2"); 
-                                        fileName = folderPath + currentProduct.name.replace("p","") + "_" + ColorAdjust("filename",currentProductColor,currentProduct) + "_" + currentMascot + "_" + String(currentDesign) + ".jpg"; 
-                                        //$.writeln("not mascot dest fileName:" + fileName);
+                                       fileName = folderPath + currentProduct.name.replace("p","") + "_" + ColorAdjust("filename",currentProductColor,currentProduct) + "_" + currentMascot + "_" + String(currentDesign) + ".jpg"; 
+
                                         return fileName;
                                         break;
                                 }
@@ -452,7 +438,9 @@ function StoreSchoolData(dataString){
 //~ }
 
     function getImage(doc,imagePath,imageName) {
-        $.writeln("imagePath: " + imagePath);
+
+        if(File(imagePath).exists == false){$.writeln("I cannot find the following image: " + imagePath);}
+
         var getFile = File(String(imagePath));
         //Window.alert("Image Path: ".concat(imagePath, " ", imageName));
         doc.groupItems.createFromFile(getFile).name= imageName;
@@ -464,47 +452,25 @@ function StoreSchoolData(dataString){
 
     function SaveDesign(currentDesignImage,currentDesign,currentCMH,destFolder,blanksFolder,designsFolder,store){
         
+        var pattern = /.*\_/g;
 
-        //currentMascotName = updateMascotFileName(currentMascot);
-
-        //GetFileName(["design",currentDesign],currentCMH,currentProduct,currentProductColor,currentDesign,designsFolder,currentMascotImage,currentMascot,store,currentApparelEmb,currentHeadwearEmb)
-        //var currentDesignImage = GetFileName(["design",currentDesign],currentCMH,"design","white",currentDesign,designsFolder,"","",store,"","");
-
-        //if(currentDesignImage.indexOf("light") > 0)
-        //{
-    //~     $.writeln("");
-    //~         $.writeln("SAVEDESIGN");
-    //~         $.writeln("currentDesignImage: " + currentDesignImage);
-            //$.writeln("currentDesignImage: " + StripFilePathAndType(currentDesignImage));
-            
-    //~         $.writeln("currentDesign: " + currentDesign);
-    //~         $.writeln("currentCMH: " + currentCMH);
-    //~         $.writeln("destFolder: " + destFolder);
-    //~         $.writeln("blanksFolder: " + blanksFolder);
-    //~         $.writeln("designsFolder: " + designsFolder);
-    //~         $.writeln("store: " + store);
-    //~         $.writeln("");
-
-            var pattern = /.*\_/g;
             var extractedColor = StripFilePathAndType(currentDesignImage).replace(pattern,"");
             if (currentDesign == "mascot"){extractedColor = "light";}
 
             var SkipCheckVar = true;
             var SkipCheckVarString = "/c/Users/".concat(user,"/Desktop/GeneratedImages/"); //"C:\\Users\\A.Leusink\\Desktop\\Generated Images\\"
-            $.writeln("//////////// Entering skip check function /////////////");
+
             SkipCheckVar = SkipCheck("/p/team24x7/fundraising/images/", SkipCheckVarString, currentDesign + "_" + currentCMH + "_" + ColorAdjust("design",extractedColor,extractedColor).toLowerCase()+ ".png");
-            //SkipCheckVar = SkipCheck("F:\\Generated Images\\", "F:\\Generated Images\\", currentDesign + "_" + currentCMH + "_" + ColorAdjust("filename",extractedColor,extractedColor).toLowerCase()+ ".png");
-            //$.writeln("SkipCheck: " + currentDesign + "_" + currentCMH + "_light.png");
-            //$.writeln("SkipCheck: " + SkipCheckVar);
-            $.writeln("//////// Passed skip check function ///////////"); 
-            if(SkipCheckVar == false && currentDesignImage.indexOf("d8") < 0 && currentDesignImage.indexOf("d9") < 0) 
+
+        if(SkipCheckVar == false && currentDesignImage.indexOf("d8") < 0 && currentDesignImage.indexOf("d9") < 0) 
+
             { 
                 //Window.alert("current design image: " + currentDesignImage);
                 $.writeln("//////// Creating new doc ///////////");
                 var doc = app.documents.add(); 
                 $.writeln("//////// Entering first getImage call ///////////");
                 var backgroundImage = getImage(doc, blanksFolder + "blank-500-square.png","blank");
-                $.writeln("currenDesignImage: " + currentDesignImage);
+
                 var designImage = getImage(doc,currentDesignImage,"designImage");
                 //$.writeln("designImage: " + designImage);
                             
@@ -528,10 +494,8 @@ function StoreSchoolData(dataString){
                 ExportPNG24NoClip(destFilePath);
 
                 doc.close(SaveOptions.DONOTSAVECHANGES);
-                $.writeln("///////// Doc created ////////");
-                
+
                 //error();
             }
-        //}       
     }
 }
