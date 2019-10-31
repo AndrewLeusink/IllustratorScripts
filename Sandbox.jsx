@@ -1,5 +1,4 @@
-
-﻿#include Utilities.jsx
+#include Utilities.jsx
 #include ProductInfo.jsx
 #include OptionsWindows.jsx
 #include SaveOptions.jsx
@@ -39,7 +38,7 @@ function Main()
 
     //modify string to parse it and elimate whitespace
     schools = String(schools);
-    schools = schools.replace(/\s/g,'');
+    //schools = schools.replace(/\s/g,'');
     var res = schools.split(',');
     //Window.alert(res);
     //Window.alert(res[1]);
@@ -212,54 +211,53 @@ function StoreSchoolData(dataString){
 
                        var currentDesignImage = GetFileName(["design",currentDesign],schoolNames.CMH,currentProduct,currentProductColor,currentDesign,designsFolder,schoolNames.mascotImage,schoolNames.mascot,store,schoolNames.apparelImage,schoolNames.headwearImage);
 
-                       if (currentDesignImage.indexOf("light") != -1 && currentDesignImage.indexOf("blank") == -1){ //********************ORIGNALLY COMMENTED OUT currentDesignImage.indexof("light") != -1********************************
-
+                       if (currentDesignImage.indexOf("Source") == -1)
+                       {
+                           if (/*currentDesignImage.indexOf("light") != -1 && */currentDesignImage.indexOf("blank") == -1){
                            SaveDesign(currentDesignImage,currentDesign,schoolNames.CMH,destFolder,blanksFolder,designsFolder,store);
-
                            }
 
-                       if (skipCheck == false)  //The file doesn't already exist, so it needs to be created. Otherwise, skip creating the picture. No need to do more work than required. This does mean you will need to delete the picture if you want to recreate it.
-                       {
-                            var doc = app.documents.add();
+                           if (skipCheck == false)  //The file doesn't already exist, so it needs to be created. Otherwise, skip creating the picture. No need to do more work than required. This does mean you will need to delete the picture if you want to recreate it.
+                           {
+                                var doc = app.documents.add();
 
-                            doc.RulerUnits = "Pixels";
+                                doc.RulerUnits = "Pixels";
 
-                            var productImage = getImage(doc,GetFileName(["product","blank"],schoolNames.CMH,currentProduct,currentProductColor,currentDesign,blanksFolder,schoolNames.mascotImage,schoolNames.mascot,store,schoolNames.apparelImage,schoolNames.headwearImage),"productImage");
+                                var productImage = getImage(doc,GetFileName(["product","blank"],schoolNames.CMH,currentProduct,currentProductColor,currentDesign,blanksFolder,schoolNames.mascotImage,schoolNames.mascot,store,schoolNames.apparelImage,schoolNames.headwearImage),"productImage");
 
-                            var designImage = getImage(doc,currentDesignImage,"designImage");
+                                var designImage = getImage(doc,currentDesignImage,"designImage");
 
-                          if(currentProduct.designLocationInformation[currentProductColor] == undefined) {
-                                var productDimensionsInfo = currentProduct.designLocationInformation["all"];
+                              if(currentProduct.designLocationInformation[currentProductColor] == undefined) {
+                                    var productDimensionsInfo = currentProduct.designLocationInformation["all"];
+                                }
+                                else {
+                                    var productDimensionsInfo = currentProduct.designLocationInformation[currentProductColor];
+                                }
+
+                                if(currentProduct.designLocationInformation["all"] != undefined && currentProduct.designLocationInformation["all"].name.indexOf ("bag") > -1){
+                                var designImage2 = getImage(doc,schoolNames.mascotImage,"mascotImage");
+                                    ResizeEverything(productImage,designImage2,currentProduct.designLocationInformation["bag-ball"]);
+                                    PositionEverything(productImage,designImage2,currentProduct.designLocationInformation["bag-ball"]);
+                                }
+
+                                if(currentProduct.designLocationInformation["all"] != undefined && currentProduct.designLocationInformation["all"].name.indexOf ("multiLocations") > -1){
+                                  var designImage2 = getImage(doc,currentDesignImage,"designImage");
+                                    ResizeEverything(productImage,designImage2,currentProduct.designLocationInformation["secondLocation"]);
+                                    PositionEverything(productImage,designImage2,currentProduct.designLocationInformation["secondLocation"]);
+                                }
+
+                                ResizeEverything(productImage,designImage,productDimensionsInfo);
+                                PositionEverything(productImage,designImage,productDimensionsInfo);
+
+                                ExportJPG(GetFileName(["product","dest"],schoolNames.CMH,currentProduct,currentProductColor,currentDesign,destFolder,schoolNames.mascotImage,schoolNames.mascot,store,schoolNames.apparelImage,schoolNames.headwearImage));
+
+                                doc.close(SaveOptions.DONOTSAVECHANGES);
                             }
                             else {
-                                var productDimensionsInfo = currentProduct.designLocationInformation[currentProductColor];
+                                //$.writeln("Skip");
                             }
-
-                            if(currentProduct.designLocationInformation["all"] != undefined && currentProduct.designLocationInformation["all"].name.indexOf ("bag") > -1){
-                            var designImage2 = getImage(doc,schoolNames.mascotImage,"mascotImage");
-                                ResizeEverything(productImage,designImage2,currentProduct.designLocationInformation["bag-ball"]);
-                                PositionEverything(productImage,designImage2,currentProduct.designLocationInformation["bag-ball"]);
-                            }
-
-                            if(currentProduct.designLocationInformation["all"] != undefined && currentProduct.designLocationInformation["all"].name.indexOf ("multiLocations") > -1){
-                              var designImage2 = getImage(doc,currentDesignImage,"designImage");
-                                ResizeEverything(productImage,designImage2,currentProduct.designLocationInformation["secondLocation"]);
-                                PositionEverything(productImage,designImage2,currentProduct.designLocationInformation["secondLocation"]);
-                            }
-
-                            ResizeEverything(productImage,designImage,productDimensionsInfo);
-                            PositionEverything(productImage,designImage,productDimensionsInfo);
-
-                            ExportJPG(GetFileName(["product","dest"],schoolNames.CMH,currentProduct,currentProductColor,currentDesign,destFolder,schoolNames.mascotImage,schoolNames.mascot,store,schoolNames.apparelImage,schoolNames.headwearImage));
-
-                            doc.close(SaveOptions.DONOTSAVECHANGES);
-                        }
-                        else {
-                            //$.writeln("Skip");
-                        }
-
-                    }
-
+                       }
+                }
             }
             //$.writeln("");
         }
