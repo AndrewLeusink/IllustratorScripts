@@ -25,7 +25,7 @@ var ProductInfo =
     pmensapparelbutton :
      {
          name : "pmensapparelbutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["black","dark green","gold","grey","maroon","navy","orange","red","royal","white"],
          fallback: ["grey"],
@@ -51,7 +51,7 @@ var ProductInfo =
  	pwomensapparelbutton :
      {
          name : "pwomensapparelbutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["black","dark green","gold","grey","maroon","navy","orange","purple","red","royal","white"],
          fallback: ["grey"],
@@ -77,7 +77,7 @@ var ProductInfo =
     paccessoriesbutton :
      {
          name : "paccessoriesbutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["white"],
          fallback: ["white"],
@@ -103,7 +103,7 @@ var ProductInfo =
      pheadwearbutton :
      {
          name : "pheadwearbutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["white"],
          fallback: ["white"],
@@ -130,7 +130,7 @@ var ProductInfo =
      pfootwearbutton :
      {
          name : "pfootwearbutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["white"],
          fallback: ["white"],
@@ -155,7 +155,7 @@ var ProductInfo =
      pequipmentbutton :
      {
          name : "pequipmentbutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["white","royal","black","red","grey"],
          fallback: ["grey"],
@@ -189,7 +189,7 @@ var ProductInfo =
  	pmensapparelmobilebutton :
      {
          name : "pmensapparelmobilebutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["black","dark green","gold","grey","maroon","navy","orange","red","royal","white"],
          fallback: ["grey"],
@@ -215,7 +215,7 @@ var ProductInfo =
  	pwomensapparelmobilebutton :
      {
          name : "pwomensapparelmobilebutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["black","dark green","gold","grey","maroon","navy","orange","purple","red","royal","white"],
          fallback: ["grey"],
@@ -241,7 +241,7 @@ var ProductInfo =
     paccessoriesmobilebutton :
      {
          name : "paccessoriesmobilebutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["white"],
          fallback: ["white"],
@@ -267,7 +267,7 @@ var ProductInfo =
      pheadwearmobilebutton :
      {
          name : "pheadwearmobilebutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["white"],
          fallback: ["white"],
@@ -295,7 +295,7 @@ var ProductInfo =
      pfootwearmobilebutton :
      {
          name : "pfootwearmobilebutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["white"],
          fallback: ["white"],
@@ -320,7 +320,7 @@ var ProductInfo =
      pequipmentmobilebutton :
      {
          name : "pequipmentmobilebutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["white"],
          fallback: ["white"],
@@ -454,7 +454,7 @@ var ProductInfo =
 	p10649 :
 	{
 		name : "p10649",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -480,7 +480,7 @@ var ProductInfo =
 	p10650 :
 	{
 		name : "p10650",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -506,7 +506,7 @@ var ProductInfo =
 	p10653 :
 	{
 		name : "p10653",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -532,7 +532,7 @@ var ProductInfo =
 	p10654 :
 	{
 		name : "p10654",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -568,7 +568,7 @@ var ProductInfo =
 	p10655 :
 	{
 		name : "p10655",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -594,7 +594,7 @@ var ProductInfo =
 	p10656:
 	{
 		name : "p10656",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -620,7 +620,7 @@ var ProductInfo =
 	p10656:
 	{
 		name : "p10656",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -646,7 +646,7 @@ var ProductInfo =
 	p10657:
 	{
 		name : "p10657",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -672,7 +672,7 @@ var ProductInfo =
 	p10658:
 	{
 		name : "p10658",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -698,7 +698,7 @@ var ProductInfo =
 	p10659:
 	{
 		name : "p10659",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -724,7 +724,7 @@ var ProductInfo =
 	p10660:
 	{
 		name : "p10660",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -776,7 +776,7 @@ var ProductInfo =
 	p10666:
 	{
 		name : "p10666",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -802,7 +802,7 @@ var ProductInfo =
 	p10683:
 	{
 		name : "p10683",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -848,7 +848,7 @@ var ProductInfo =
 	p11691: //Divot Tool
 	{
 		name : "p11691",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -869,7 +869,7 @@ var ProductInfo =
 	p12759:
 	{
 		name : "p12759",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -895,7 +895,7 @@ var ProductInfo =
 	p12770:
 	{
 		name : "p12770",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -921,7 +921,7 @@ var ProductInfo =
 	p12776:
 	{
 		name : "p12776",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -947,7 +947,7 @@ var ProductInfo =
 	p12780:
 	{
 		name : "p12780",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -973,7 +973,7 @@ var ProductInfo =
 	p12782:
 	{
 		name : "p12782",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1029,7 +1029,7 @@ var ProductInfo =
 	p12786:
 	{
 		name : "p12786",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1085,7 +1085,7 @@ var ProductInfo =
 	p12787:
 	{
 		name : "p12787",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1121,7 +1121,7 @@ var ProductInfo =
 	p12788:
 	{
 		name : "p12788",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1176,7 +1176,7 @@ var ProductInfo =
 	p12837:
 	{
 		name : "p12837",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1202,7 +1202,7 @@ var ProductInfo =
 	p12843:
 	{
 		name : "p12843",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1244,7 +1244,7 @@ var ProductInfo =
 	p12846:
 	{
 		name : "p12846",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1265,7 +1265,7 @@ var ProductInfo =
 	p12848:
 	{
 		name : "p12848",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1286,7 +1286,7 @@ var ProductInfo =
 	p12851: //Z-Star XV
 	{
 		name : "p12851",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1307,7 +1307,7 @@ var ProductInfo =
 	p12854: //Z-Star
 	{
 		name : "p12854",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1328,7 +1328,7 @@ var ProductInfo =
 	p12855: //Q-Star Tour
 	{
 		name : "p12855",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1349,7 +1349,7 @@ var ProductInfo =
 	p12856: //Soft Feel
 	{
 		name : "p12856",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1370,7 +1370,7 @@ var ProductInfo =
 	p12857: //TP5x
 	{
 		name : "p12857",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1391,7 +1391,7 @@ var ProductInfo =
 	p12858: //TP5
 	{
 		name : "p12858",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1412,7 +1412,7 @@ var ProductInfo =
 	p12866:
 	{
 		name : "p12866",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1438,7 +1438,7 @@ var ProductInfo =
 	p6215:
 	{
 		name : "p6215",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "ht",
 		allColors: ["royal","black","grey","navy"],
 		designs: ["d8","d9"],
@@ -1466,7 +1466,7 @@ var ProductInfo =
 	p12775:
 	{
 		name : "p12775",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1492,7 +1492,7 @@ var ProductInfo =
 	p12789:
 	{
 		name : "p12789",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1518,7 +1518,7 @@ var ProductInfo =
 	p12839:
 	{
 		name : "p12839",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1544,7 +1544,7 @@ var ProductInfo =
 	p12882:
 	{
 		name : "p12882",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "ht",
 		allColors: ["dark green","red","black","grey","white"],
 		designs: ["d8","d9"],
@@ -1592,7 +1592,7 @@ var ProductInfo =
 	p12897:
 	{
 		name : "p12897",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1613,7 +1613,7 @@ var ProductInfo =
 	p12898:
 	{
 		name : "p12898",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1634,7 +1634,7 @@ var ProductInfo =
 	p12918:
 	{
 		name : "p12918",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "ht",
 		allColors: ["black"],
 		designs: ["d1","d10"],
@@ -1660,7 +1660,7 @@ var ProductInfo =
 	p12919:
 	{
 		name : "p12919",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "ht",
 		allColors: ["black","navy","royal","white"],
         overrides:
@@ -1687,7 +1687,7 @@ var ProductInfo =
 	p12940:
 	{
 		name : "p12940",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1724,7 +1724,7 @@ var ProductInfo =
 	p12941:
 	{
 		name : "p12941",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1751,7 +1751,7 @@ var ProductInfo =
 	p12942:
 	{
 		name : "p12942",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1778,7 +1778,7 @@ var ProductInfo =
 	p12943:
 	{
 		name : "p12943",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1805,7 +1805,7 @@ var ProductInfo =
 	p12947:
 	{
 		name : "p12947",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1832,7 +1832,7 @@ var ProductInfo =
 	p12948:
 	{
 		name : "p12948",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1859,7 +1859,7 @@ var ProductInfo =
 	p12949:
 	{
 		name : "p12949",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1886,7 +1886,7 @@ var ProductInfo =
 	p12950:
 	{
 		name : "p12950",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1912,7 +1912,7 @@ var ProductInfo =
 	p12952:
 	{
 		name : "p12952",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1938,7 +1938,7 @@ var ProductInfo =
 	p12959:
 	{
 		name : "p12959",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1964,7 +1964,7 @@ var ProductInfo =
 	p12974:
 	{
 		name : "p12974",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2142,7 +2142,7 @@ var ProductInfo =
 	p5114 :
 	{
 		name : "p5114",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2168,7 +2168,7 @@ var ProductInfo =
 	p5125: //adidas unstructured cap 2
 	{
 		name : "p5125",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2195,7 +2195,7 @@ var ProductInfo =
 	p5128: //adidas structured cap 2
 	{
 		name : "p5128",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2222,7 +2222,7 @@ var ProductInfo =
 	p5131:
 	{
 		name : "p5131",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2248,7 +2248,7 @@ var ProductInfo =
 	p5546:
 	{
 		name : "p5546",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "sub",
 		allColors: ["white"],
 		designs: ["d1","d2","d5"],
@@ -2268,7 +2268,7 @@ var ProductInfo =
 	p5701: //Short Sleeve Logo Tee
 	{
 		name : "p5701",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "dtg",
 		allColors: ["red","maroon","athletic gold","dark green","royal","navy","purple","black","grey","white","orange"],
 		designs: ["d1","d2","d3"],
@@ -2287,7 +2287,7 @@ var ProductInfo =
 	p5764:
 	{
 		name : "p5764",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2314,7 +2314,7 @@ var ProductInfo =
 	p5972:
 	{
 		name : "p5972",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2375,7 +2375,7 @@ var ProductInfo =
 	p6019 : //climalite Fielder's Choice Convertible Jacket
 	{
 		name : "p6019",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2411,7 +2411,7 @@ var ProductInfo =
 	p6143 :
 	{
 		name : "p6143",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2447,7 +2447,7 @@ var ProductInfo =
 	p6145 : //Club Short Sleeve Wind Jacket
 	{
 		name : "p6145",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2509,7 +2509,7 @@ var ProductInfo =
 	p6361 : //Club Wind Vest
 	{
 		name : "p6361",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2641,7 +2641,7 @@ var ProductInfo =
 	p6412 :
 	{
 		name : "p6412",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2667,7 +2667,7 @@ var ProductInfo =
 	p6415 :
 	{
 		name : "p6415",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2848,7 +2848,7 @@ var ProductInfo =
 	p6490 :
 	{
 		name : "p6490",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2874,7 +2874,7 @@ var ProductInfo =
 	p6491 :
 	{
 		name : "p6491",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2900,7 +2900,7 @@ var ProductInfo =
 	p6492 :
 	{
 		name : "p6492",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2926,7 +2926,7 @@ var ProductInfo =
 	p6499 :
 	{
 		name : "p6499",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2978,7 +2978,7 @@ var ProductInfo =
 	p6518:
 	{
 		name : "p6518",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "dtg",
 		allColors: ["red","royal","navy","black","grey","charcoal"],
 		designs: ["d1","d2","d3"],
@@ -3022,7 +3022,7 @@ var ProductInfo =
 	p6530:
 	{
 		name : "p6530",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -3101,7 +3101,7 @@ var ProductInfo =
 	p6561: //Carbon Fiber Hat
 	{
 		name : "p6561",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -3127,7 +3127,7 @@ var ProductInfo =
 	p6566 :
 	{
 		name : "p6566",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -3153,7 +3153,7 @@ var ProductInfo =
 	p6571 :
 	{
 		name : "p6571",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -3189,7 +3189,7 @@ var ProductInfo =
 	p6576 :
 	{
 		name : "p6576",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -3215,7 +3215,7 @@ var ProductInfo =
 	p6580 :
 	{
 		name : "p6580",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -3241,7 +3241,7 @@ var ProductInfo =
 	p6581 :
 	{
 		name : "p6581",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -3267,7 +3267,7 @@ var ProductInfo =
 	p7595:
 	{
 		name : "p7595",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -3314,7 +3314,7 @@ var ProductInfo =
 	p7608: //project(s)
 	{
 		name : "p7608",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -3335,7 +3335,7 @@ var ProductInfo =
 	p8612: //project(a)
 	{
 		name : "p8612",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -3356,7 +3356,7 @@ var ProductInfo =
 	p9646:
 	{
 		name : "p9646",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -3474,7 +3474,7 @@ var ProductInfo =
 	p12994: //PitchFix Fusion
 	{
 		name : "p12994",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -3505,7 +3505,7 @@ var ProductInfo =
 	p12993: //PitchFix Hybrid
 	{
 		name : "p12993",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -3536,7 +3536,7 @@ var ProductInfo =
 	p12996: //PitchFix Original
 	{
 		name : "p12996",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -3567,7 +3567,7 @@ var ProductInfo =
 	p12997: //PitchFix Multimarker
 	{
 		name : "p12997",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
