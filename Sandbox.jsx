@@ -68,7 +68,7 @@ function Main()
 
 function StoreSchoolData(dataString){
         //modify string to parse it and elimate whitespace
-        dataString = dataString.replace(/\s/g,'');
+        //dataString = dataString.replace(/\s/g,'');
         var res = dataString.split(',');
         //Window.alert(res[1]);
         var test = res[1].length;
