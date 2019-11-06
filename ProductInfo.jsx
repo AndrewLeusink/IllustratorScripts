@@ -2,7 +2,7 @@
 var StoreInfo =
 {
     fan : "",
-    team : 
+    team :
     {
         designsFolder : "P:\\Team Stores\\Designs\\PNGs\\"
     },
@@ -11,7 +11,7 @@ var StoreInfo =
 }
 
 //Product Information
-var ProductInfo = 
+var ProductInfo =
 {
 	all :
     {
@@ -47,7 +47,7 @@ var ProductInfo =
                   rule: "square"
                 }
          }
-     },    
+     },
  	pwomensapparelbutton :
      {
          name : "pwomensapparelbutton",
@@ -73,7 +73,7 @@ var ProductInfo =
                   rule: "square"
                 }
          }
-     }, 
+     },
     paccessoriesbutton :
      {
          name : "paccessoriesbutton",
@@ -99,7 +99,7 @@ var ProductInfo =
                   rule : "height"
                 }
          }
-     },  
+     },
      pheadwearbutton :
      {
          name : "pheadwearbutton",
@@ -126,7 +126,7 @@ var ProductInfo =
                    align : "bottom"
                 }
          }
-     },  
+     },
      pfootwearbutton :
      {
          name : "pfootwearbutton",
@@ -175,8 +175,8 @@ var ProductInfo =
                 designMaxWidth : 0.35,
                 designMaxHeight : 0.1375,
                 rotate: 90
-            },	
-            "bag-ball" : 
+            },
+            "bag-ball" :
             {
                 name : "bag-ball",
                 designCenter : 0.372222,
@@ -185,7 +185,7 @@ var ProductInfo =
                 designMaxHeight : 0.120833
             }
          }
-     },  
+     },
  	pmensapparelmobilebutton :
      {
          name : "pmensapparelmobilebutton",
@@ -211,7 +211,7 @@ var ProductInfo =
                   rule: "square"
                 }
          }
-     },    
+     },
  	pwomensapparelmobilebutton :
      {
          name : "pwomensapparelmobilebutton",
@@ -237,7 +237,7 @@ var ProductInfo =
                   rule: "square"
                 }
          }
-     }, 
+     },
     paccessoriesmobilebutton :
      {
          name : "paccessoriesmobilebutton",
@@ -263,7 +263,7 @@ var ProductInfo =
                   rule : "height"
                 }
          }
-     },  
+     },
      pheadwearmobilebutton :
      {
          name : "pheadwearmobilebutton",
@@ -291,7 +291,7 @@ var ProductInfo =
                   rule : "height"
                 }
          }
-     },  
+     },
      pfootwearmobilebutton :
      {
          name : "pfootwearmobilebutton",
@@ -342,7 +342,7 @@ var ProductInfo =
                 rule : "hypotenuse"
             }
          }
-     },  
+     },
     p10647 :
 	{
 		name : "p10647",
@@ -372,7 +372,7 @@ var ProductInfo =
 				designHeight : 0.768939,
 				designMaxWidth : 0.061386,
 				designMaxHeight : 0.362376
-			},	
+			},
 			"navy" :
 			{
 				name : "navy",
@@ -439,7 +439,7 @@ var ProductInfo =
 				designMaxWidth : 0.056766,
 				designMaxHeight : 0.055446,
                   rule: "square"
-			},	
+			},
             "white" :
 			{
 				name : "white",
@@ -448,7 +448,7 @@ var ProductInfo =
 				designMaxWidth : 0.056766,
 				designMaxHeight : 0.055446,
                   rule: "square"
-			}	
+			}
 		}
 	},
 	p10649 :
@@ -461,8 +461,8 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["red","dark green","royal","navy","black","charcoal","purple"], 
-		designs : ["team","mascot"], 
+		allColors: ["red","dark green","royal","navy","black","charcoal","purple"],
+		designs : ["team","mascot"],
 		designLocationInformation :
 		{
 			"all" :
@@ -474,7 +474,7 @@ var ProductInfo =
 				designMaxHeight : 0.080303,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p10650 :
@@ -487,7 +487,7 @@ var ProductInfo =
 			light: [""],
 			dark: ["grey"]
 		},
-		allColors: ["red","royal","navy","black","grey","white"], 
+		allColors: ["red","royal","navy","black","grey","white"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 		{
@@ -513,7 +513,7 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["royal","navy","black","grey"], 
+		allColors: ["royal","navy","black","grey"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 		{
@@ -526,7 +526,7 @@ var ProductInfo =
 				designMaxHeight : 0.080303,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p10654 :
@@ -539,7 +539,7 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["navy","black","grey","white"], 
+		allColors: ["navy","black","grey","white"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 		{
@@ -562,7 +562,7 @@ var ProductInfo =
 				designMaxHeight : 0.075758,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p10655 :
@@ -575,7 +575,7 @@ var ProductInfo =
 			light: [""],
 			dark: ["grey"]
 		},
-		allColors: ["red","dark green","royal","navy","purple","white","grey","black","orange"], 
+		allColors: ["red","dark green","royal","navy","purple","white","grey","black","orange"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 		{
@@ -614,7 +614,7 @@ var ProductInfo =
 				designMaxHeight : 0.080303,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p10656:
@@ -640,7 +640,7 @@ var ProductInfo =
 				designMaxHeight : 0.082576,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p10657:
@@ -666,7 +666,7 @@ var ProductInfo =
 				designMaxHeight : 0.090152,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p10658:
@@ -692,13 +692,13 @@ var ProductInfo =
 				designMaxHeight : 0.090152,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p10659:
 	{
 		name : "p10659",
-		stores: ["team"],
+		stores: [""],
 		process: "emb",
 		overrides:
 		{
@@ -718,7 +718,7 @@ var ProductInfo =
 				designMaxHeight : 0.081818,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p10660:
@@ -729,7 +729,7 @@ var ProductInfo =
 		overrides:
 		{
 			light: [""],
-			dark: [""]
+			dark: ["grey"]
 		},
 		allColors: ["royal","navy","black","grey","red"],
 		designs: ["team","mascot"],
@@ -744,7 +744,7 @@ var ProductInfo =
 				designMaxHeight : 0.083333,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p10661:
@@ -770,7 +770,7 @@ var ProductInfo =
 				designMaxHeight : 0.058086,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p10666:
@@ -796,7 +796,7 @@ var ProductInfo =
 				designMaxHeight : 0.240139,
                   rule : "height",
                   align: "bottom"
-			}	
+			}
 		}
 	},
 	p10683:
@@ -842,7 +842,7 @@ var ProductInfo =
 				designMaxHeight : 0.072727,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p11691: //Divot Tool
@@ -889,7 +889,7 @@ var ProductInfo =
 				designMaxHeight : 0.073485,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p12770:
@@ -915,7 +915,7 @@ var ProductInfo =
 				designMaxHeight : 0.07197,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p12776:
@@ -941,7 +941,7 @@ var ProductInfo =
 				designMaxHeight : 0.07197,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p12780:
@@ -967,7 +967,7 @@ var ProductInfo =
 				designMaxHeight : 0.090909,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p12782:
@@ -1013,7 +1013,7 @@ var ProductInfo =
 				designMaxHeight : 0.07197,
                   rule: "square",
                   align: "center"
-			},						
+			},
             "royal" :
 			{
 				name : "royal",
@@ -1079,7 +1079,7 @@ var ProductInfo =
 				designMaxHeight : 0.078788,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p12787:
@@ -1141,7 +1141,7 @@ var ProductInfo =
 				designMaxHeight : 0.075758,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p12804:
@@ -1155,7 +1155,7 @@ var ProductInfo =
 			dark: [""]
 		},
 		allColors: ["columbia","red","grey","graphite","royal"],
-		designs: 
+		designs:
          {
             "team" : ["team","mascot"]
 		},
@@ -1170,7 +1170,7 @@ var ProductInfo =
 				designMaxHeight : 0.075758,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p12837:
@@ -1196,7 +1196,7 @@ var ProductInfo =
 				designMaxHeight : 0.072727,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p12843:
@@ -1217,7 +1217,7 @@ var ProductInfo =
 				designMaxHeight : 0.079545,
                   align: "center",
                   rule : "hypotenuse"
-			}	
+			}
 		}
 	},
 	p12907:
@@ -1238,7 +1238,7 @@ var ProductInfo =
 				designMaxHeight : 0.065909,
                   align: "center",
                   rule: "hypotenuse"
-			}	
+			}
 		}
 	},
 	p12846:
@@ -1259,7 +1259,7 @@ var ProductInfo =
 				designMaxHeight : 0.079545,
                   align: "center",
                   rule: "hypotenuse"
-			}	
+			}
 		}
 	},
 	p12848:
@@ -1280,7 +1280,7 @@ var ProductInfo =
 				designMaxHeight : 0.065909,
                   align: "center",
                   rule: "hypotenuse"
-			}	
+			}
 		}
 	},
 	p12851: //Z-Star XV
@@ -1301,7 +1301,7 @@ var ProductInfo =
 				designMaxHeight : 0.26183,
                   align: "center",
                   rule: "hypotenuse"
-			}	
+			}
 		}
 	},
 	p12854: //Z-Star
@@ -1322,7 +1322,7 @@ var ProductInfo =
 				designMaxHeight : 0.26183,
                   align: "center",
                   rule: "hypotenuse"
-			}	
+			}
 		}
 	},
 	p12855: //Q-Star Tour
@@ -1343,7 +1343,7 @@ var ProductInfo =
 				designMaxHeight : 0.26183,
                   align: "center",
                   rule: "hypotenuse"
-			}	
+			}
 		}
 	},
 	p12856: //Soft Feel
@@ -1364,7 +1364,7 @@ var ProductInfo =
 				designMaxHeight : 0.26183,
                   align: "center",
                   rule: "hypotenuse"
-			}	
+			}
 		}
 	},
 	p12857: //TP5x
@@ -1385,7 +1385,7 @@ var ProductInfo =
 				designMaxHeight : 0.26183,
                   align: "center",
                   rule: "hypotenuse"
-			}	
+			}
 		}
 	},
 	p12858: //TP5
@@ -1406,7 +1406,7 @@ var ProductInfo =
 				designMaxHeight : 0.26183,
                   align: "center",
                   rule: "hypotenuse"
-			}	
+			}
 		}
 	},
 	p12866:
@@ -1432,7 +1432,7 @@ var ProductInfo =
 				designMaxHeight : 0.080303,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p6215:
@@ -1441,7 +1441,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "ht",
 		allColors: ["royal","black","grey","navy"],
-		designs: ["d8","d9"],
+		designs: ["d9","d11"],
 		designLocationInformation:
 		{
             "all" :
@@ -1452,8 +1452,8 @@ var ProductInfo =
                 designMaxWidth : 0.398,
                 designMaxHeight : 0.119,
                 rotate: 90
-            },	
-            "bag-ball" : 
+            },
+            "bag-ball" :
             {
                 name : "bag-ball",
                 designCenter : 0.2111,
@@ -1486,7 +1486,7 @@ var ProductInfo =
 				designMaxHeight : 0.091667,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p12789:
@@ -1512,7 +1512,7 @@ var ProductInfo =
 				designMaxHeight : 0.080367,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p12839:
@@ -1538,7 +1538,7 @@ var ProductInfo =
 				designMaxHeight : 0.076515,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p12882:
@@ -1547,7 +1547,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "ht",
 		allColors: ["dark green","red","black","grey","white"],
-		designs: ["d8","d9"],
+		designs: ["d9","d11"],
 		designLocationInformation:
 		{
             "all" :
@@ -1558,8 +1558,8 @@ var ProductInfo =
                 designMaxWidth : 0.339,
                 designMaxHeight : 0.107,
                 rotate: 80.8
-            },	
-            "bag-ball" : 
+            },
+            "bag-ball" :
             {
                 name : "bag-ball",
                 designCenter : 0.2425,
@@ -1586,7 +1586,7 @@ var ProductInfo =
 				designMaxWidth : 0.074,
 				designMaxHeight : 0.074,
                   align: "center"
-			}	
+			}
 		}
 	},
 	p12897:
@@ -1607,7 +1607,7 @@ var ProductInfo =
 				designMaxHeight : 0.074,
                   align: "center",
                   rule: "hypotenuse"
-			}	
+			}
 		}
 	},
 	p12898:
@@ -1628,7 +1628,28 @@ var ProductInfo =
 				designMaxHeight : 0.074,
                   align: "center",
                   rule: "hypotenuse"
-			}	
+			}
+		}
+	},
+	p12906:
+	{
+		name : "p12906",
+		stores: ["team"],
+		process: "ht",
+		allColors: ["white"],
+		designs: ["d1"],
+		designLocationInformation:
+		{
+			"all" :
+			{
+				name : "all",
+				designCenter : 0.5,
+				designHeight : 0.975,
+				designMaxWidth : 0.95,
+				designMaxHeight : 0.95,
+                  align: "center",
+                  rule: "square"
+			}
 		}
 	},
 	p12918:
@@ -1654,7 +1675,7 @@ var ProductInfo =
 				designMaxHeight : 0.253788,
                   align : "bottom",
                   rule : "height"
-			}	
+			}
 		}
 	},
 	p12919:
@@ -1668,7 +1689,7 @@ var ProductInfo =
 			light: ["royal"],
 			dark: [""]
 		},
-		designs: ["d1","d10"],   
+		designs: ["d1","d10"],
 		designLocationInformation:
 		{
 			"all" :
@@ -1681,7 +1702,7 @@ var ProductInfo =
                   align : "bottom",
                   rule : "height"//,
                   //rotate : 49.5
-			}	
+			}
 		}
 	},
 	p12940:
@@ -1694,8 +1715,8 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["royal","dark green","navy","black","maroon","burgundy","grey","kelly green"], 
-		//allColors: ["grey"], 
+		allColors: ["royal","dark green","navy","black","maroon","burgundy","grey","kelly green"],
+		//allColors: ["grey"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 	{
@@ -1731,8 +1752,8 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["royal","burgundy","navy","black"], 
-		//allColors: ["grey"], 
+		allColors: ["royal","burgundy","navy","black"],
+		//allColors: ["grey"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 	{
@@ -1758,8 +1779,8 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["dark green","kelly green","black","navy","grey","royal"], 
-		//allColors: ["grey"], 
+		allColors: ["dark green","kelly green","black","navy","grey","royal"],
+		//allColors: ["grey"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 	{
@@ -1783,10 +1804,10 @@ var ProductInfo =
 		overrides:
 		{
 			light: [""],
-			dark: [""]
+			dark: ["grey"]
 		},
-		allColors: ["grey","royal","white","navy","black","red"], 
-		//allColors: ["grey"], 
+		allColors: ["grey","royal","white","navy","black","red"],
+		//allColors: ["grey"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 	{
@@ -1810,20 +1831,20 @@ var ProductInfo =
 		overrides:
 		{
 			light: [""],
-			dark: [""]
+			dark: ["grey"]
 		},
-		allColors: ["red","navy","royal","maroon","white","grey","black","dark green"], 
-		//allColors: ["grey"], 
+		allColors: ["red","navy","royal","maroon","white","grey","black","dark green"],
+		//allColors: ["grey"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 	{
             "all" :
 			{
 				name : "all",
-				designCenter : 0.5660416,
-				designHeight : 0.8104167,
-				designMaxWidth : 0.0791666,
-				designMaxHeight : 0.0791666,
+				designCenter : 0.493056,
+				designHeight : 0.805556,
+				designMaxWidth : 0.071296,
+				designMaxHeight : 0.078296,
                   rule: "square",
                   align: "center"
 			}
@@ -1839,8 +1860,8 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["royal","charcoal","orange","gold","dark green","maroon","red","white","navy","black"], 
-		//allColors: ["grey"], 
+		allColors: ["royal","charcoal","orange","gold","dark green","maroon","red","white","navy","black"],
+		//allColors: ["grey"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 	{
@@ -1866,8 +1887,8 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["navy","royal","dark green","charcoal","maroon","red","white"], 
-		//allColors: ["grey"], 
+		allColors: ["navy","royal","dark green","charcoal","maroon","red","white"],
+		//allColors: ["grey"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 	{
@@ -1891,19 +1912,19 @@ var ProductInfo =
 		overrides:
 		{
 			light: [""],
-			dark: [""]
+			dark: ["grey"]
 		},
-		allColors: ["red","navy","royal","maroon","white","grey","black"], 
+		allColors: ["red","navy","royal","maroon","white","grey","black"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 	{
             "all" :
 			{
 				name : "all",
-				designCenter : 0.5589583,
-				designHeight : 0.8120834,
-				designMaxWidth : 0.0704166,
-				designMaxHeight : 0.0704166,
+				designCenter : 0.432013,
+				designHeight : 0.811364,
+				designMaxWidth : 0.053465,
+				designMaxHeight : 0.053465,
                   rule: "square",
                   align: "center"
 			}
@@ -1919,7 +1940,7 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["maroon","red","white","black","navy","purple","royal","charcoal","dark green"], 
+		allColors: ["maroon","red","white","black","navy","purple","royal","charcoal","dark green"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 	{
@@ -1943,9 +1964,9 @@ var ProductInfo =
 		overrides:
 		{
 			light: [""],
-			dark: [""]
+			dark: ["grey"]
 		},
-		allColors: ["grey","black","navy"], 
+		allColors: ["grey","black","navy"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 	{
@@ -1969,10 +1990,10 @@ var ProductInfo =
 		overrides:
 		{
 			light: [""],
-			dark: [""]
+			dark: ["grey"]
 		},
-		allColors: ["maroon","red","navy","royal","black","grey"], 
-		//allColors: ["grey"], 
+		allColors: ["maroon","red","navy","royal","black","grey"],
+		//allColors: ["grey"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 	{
@@ -2008,7 +2029,7 @@ var ProductInfo =
 				designHeight : 0.741818,
 				designMaxWidth : 0.067273,
 				designMaxHeight : 0.067273
-			}	
+			}
 		}
 	},
     p2668 :
@@ -2064,7 +2085,7 @@ var ProductInfo =
 				designHeight : 0.738182,
 				designMaxWidth : 0.067273,
 				designMaxHeight : 0.067273
-			}	
+			}
 		}
 	},
 	p2715 :
@@ -2077,7 +2098,7 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["red","yellow","royal","navy","black","white"], 
+		allColors: ["red","yellow","royal","navy","black","white"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 	{
@@ -2136,7 +2157,7 @@ var ProductInfo =
 				designHeight : 0.2,
 				designMaxWidth : 0.2,
 				designMaxHeight : 0.2
-			}	
+			}
 		}
 	},
 	p5114 :
@@ -2149,7 +2170,7 @@ var ProductInfo =
 			light: [""],
 			dark: ["grey"]
 		},
-		allColors: ["red","maroon","dark green","royal","navy","purple","black","grey","white"], 
+		allColors: ["red","maroon","dark green","royal","navy","purple","black","grey","white"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 		{
@@ -2189,7 +2210,7 @@ var ProductInfo =
 				//designMaxHeight : 0.179211,
                   align: "bottom",
                   rule : "height"
-			}	
+			}
 		}
 	},
 	p5128: //adidas structured cap 2
@@ -2216,7 +2237,7 @@ var ProductInfo =
 				//designMaxHeight : 0.179211,
                   rule : "height",
                   align: "bottom"
-			}	
+			}
 		}
 	},
 	p5131:
@@ -2242,7 +2263,7 @@ var ProductInfo =
 				designMaxHeight : 0.208202,
                   //align: "bottom",
                   rule : "height"
-			}	
+			}
 		}
 	},
 	p5546:
@@ -2262,7 +2283,7 @@ var ProductInfo =
 				designMaxWidth : 0.5212,
 				designMaxHeight : 0.397727,
                   align: "center"
-			}	
+			}
 		}
 	},
 	p5701: //Short Sleeve Logo Tee
@@ -2281,7 +2302,7 @@ var ProductInfo =
 				designHeight : 0.858044,
 				designMaxWidth : 0.294,
 				designMaxHeight : 0.236593
-			}	
+			}
 		}
 	},
 	p5764:
@@ -2308,7 +2329,7 @@ var ProductInfo =
 				//designMaxHeight : 0.179211,
                   align: "bottom",
                   rule : "height"
-			}	
+			}
 		}
 	},
 	p5972:
@@ -2351,7 +2372,7 @@ var ProductInfo =
 				designMaxWidth : 0.066667,
 				designMaxHeight : 0.076515,
                   rule: "square"
-			},	
+			},
              "navy" :
 			{
 				name : "navy",
@@ -2360,7 +2381,7 @@ var ProductInfo =
 				designMaxWidth : 0.057426,
 				designMaxHeight : 0.057426,
                   rule: "square"
-			},		
+			},
             "grey" :
 			{
 				name : "grey",
@@ -2369,7 +2390,7 @@ var ProductInfo =
 				designMaxWidth : 0.057426,
 				designMaxHeight : 0.057426,
                   rule: "square"
-			}	
+			}
 		}
 	},
 	p6019 : //climalite Fielder's Choice Convertible Jacket
@@ -2382,7 +2403,7 @@ var ProductInfo =
 			light: [""],
 			dark: ["grey"]
 		},
-		allColors: ["red","maroon","dark green","navy","purple","black","grey","green","royal"], 
+		allColors: ["red","maroon","dark green","navy","purple","black","grey","green","royal"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 		{
@@ -2405,7 +2426,7 @@ var ProductInfo =
 				designMaxHeight : 0.2,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p6143 :
@@ -2418,7 +2439,7 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["red","grey"], 
+		allColors: ["red","grey"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 		{
@@ -2441,7 +2462,7 @@ var ProductInfo =
 				designMaxHeight : 0.079545,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p6145 : //Club Short Sleeve Wind Jacket
@@ -2454,7 +2475,7 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["red","navy","black","grey","white"], 
+		allColors: ["red","navy","black","grey","white"],
 		designs : ["team","mascot"],
 		designLocationInformation :
          {
@@ -2467,7 +2488,7 @@ var ProductInfo =
 				designMaxHeight : 0.085152,
                   rule: "square",
                   align: "center"
-             },  
+             },
              "white" :
 			{
 				name : "all",
@@ -2490,7 +2511,7 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["red","navy","black","white"], 
+		allColors: ["red","navy","black","white"],
 		designs : ["team","mascot"],
 		designLocationInformation :
          {
@@ -2516,7 +2537,7 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["red","navy","grey"], 
+		allColors: ["red","navy","grey"],
 		designs : ["team","mascot"],
 		designLocationInformation :
         {
@@ -2548,7 +2569,7 @@ var ProductInfo =
 				designMaxWidth : 0.074587,
 				designMaxHeight : 0.085606,
                   rule: "square"
-			}	
+			}
 		}
 	},
 	p5972 :
@@ -2561,7 +2582,7 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["red","navy","black","grey","white"], 
+		allColors: ["red","navy","black","grey","white"],
 		designs : ["team","mascot"],
 		designLocationInformation :
             {
@@ -2609,7 +2630,7 @@ var ProductInfo =
 				designMaxWidth : 0.052145,
 				designMaxHeight : 0.052145,
                   rule: "square"
-			}	
+			}
 		}
 	},
 	p6368 :
@@ -2622,7 +2643,7 @@ var ProductInfo =
 			light: [""],
 			dark: ["grey"]
 		},
-		allColors: ["red","orange","dark green","navy","grey","white","black"], 
+		allColors: ["red","orange","dark green","navy","grey","white","black"],
 		designs : ["team","mascot"],
 		designLocationInformation :
          {
@@ -2648,7 +2669,7 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["red","orange","royal","grey","white","black"], 
+		allColors: ["red","orange","royal","grey","white","black"],
 		designs : ["team","mascot"],
 		designLocationInformation :
          {
@@ -2674,7 +2695,7 @@ var ProductInfo =
 			light: [""],
 			dark: ["grey"]
 		},
-		allColors: ["red","dark green","navy","black","grey","white"], 
+		allColors: ["red","dark green","navy","black","grey","white"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 		{
@@ -2727,7 +2748,7 @@ var ProductInfo =
 				designMaxHeight : 0.081818,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p6419 :
@@ -2740,7 +2761,7 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["purple","black"], 
+		allColors: ["purple","black"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 		{
@@ -2774,7 +2795,7 @@ var ProductInfo =
 				designMaxHeight : 0.2,
                   align : "bottom",
                   rule : "height"
-			}	
+			}
 		}
 	},
 	p6442:
@@ -2795,7 +2816,7 @@ var ProductInfo =
 				designMaxHeight : 0.2,
                   align : "bottom",
                   rule : "height"
-			}	
+			}
 		}
 	},
 	p6480:
@@ -2816,7 +2837,7 @@ var ProductInfo =
 				designMaxHeight : 0.2,
                   align : "bottom",
                   rule : "height"
-			}	
+			}
 		}
 	},
 	p6489 :
@@ -2829,7 +2850,7 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["red","maroon","dark green","black"], 
+		allColors: ["red","maroon","dark green","black"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 		{
@@ -2842,7 +2863,7 @@ var ProductInfo =
 				designMaxHeight : 0.067278,
                   rule: "square",
                   align: "center"
-               }	
+               }
 		}
 	},
 	p6490 :
@@ -2855,7 +2876,7 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["red","orange","dark green","royal","navy","purple","black","white"], 
+		allColors: ["red","orange","dark green","royal","navy","purple","black","white"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 		{
@@ -2868,7 +2889,7 @@ var ProductInfo =
 				designMaxHeight : 0.077273,
                   rule: "square",
                   align: "center"
-               }	
+               }
 		}
 	},
 	p6491 :
@@ -2881,7 +2902,7 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["red","orange","athletic gold","dark green","royal","navy","purple","black"], 
+		allColors: ["red","orange","athletic gold","dark green","royal","navy","purple","black"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 		{
@@ -2894,7 +2915,7 @@ var ProductInfo =
 				designMaxHeight : 0.075273,
                   rule: "square",
                   align: "center"
-               }	
+               }
 		}
 	},
 	p6492 :
@@ -2907,7 +2928,7 @@ var ProductInfo =
 			light: ["all"],
 			dark: [""]
 		},
-		allColors: ["red","orange","athletic gold","dark green","royal","navy","purple","black"], 
+		allColors: ["red","orange","athletic gold","dark green","royal","navy","purple","black"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 		{
@@ -2920,7 +2941,7 @@ var ProductInfo =
 				designMaxHeight : 0.080303,
                   rule: "square",
                   align: "center"
-               }	
+               }
 		}
 	},
 	p6499 :
@@ -2933,7 +2954,7 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["red","maroon","yellow","dark green","royal","navy","purple","black","white","orange","athletic gold"], 
+		allColors: ["red","maroon","yellow","dark green","royal","navy","purple","black","white","orange","athletic gold"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 		{
@@ -2946,7 +2967,7 @@ var ProductInfo =
 				designMaxHeight : 0.081818,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p6503:
@@ -2957,7 +2978,7 @@ var ProductInfo =
 		overrides:
 		{
 			light: [""],
-			dark: [""]
+			dark: ["grey"]
 		},
 		allColors: ["royal","grey","black"],
 		designs: ["team","mascot"],
@@ -2972,7 +2993,7 @@ var ProductInfo =
 				designMaxHeight : 0.067278,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p6518:
@@ -2991,7 +3012,7 @@ var ProductInfo =
 				designHeight : 0.780,
 				designMaxWidth : 0.29,
 				designMaxHeight : 0.270455
-			}	
+			}
 		}
 	},
 	p6528:
@@ -3016,7 +3037,7 @@ var ProductInfo =
 				designMaxWidth : 0.213201,
 				designMaxHeight : 0.244697,
                   align : "bottom"
-			}	
+			}
 		}
 	},
 	p6530:
@@ -3027,7 +3048,7 @@ var ProductInfo =
 		overrides:
 		{
 			light: [""],
-			dark: [""]
+			dark: ["grey"]
 		},
 		allColors: ["black","grey","navy","red","royal","white"],
 		designs: ["team","mascot"],
@@ -3042,7 +3063,7 @@ var ProductInfo =
 				designMaxHeight : 0.078788,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p6559 :
@@ -3055,7 +3076,7 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["red","maroon","dark green","royal","navy","purple","black","white"], 
+		allColors: ["red","maroon","dark green","royal","navy","purple","black","white"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 		{
@@ -3094,8 +3115,8 @@ var ProductInfo =
 				//designMaxHeight : 0.179091,
                   align: "bottom",
                   rule : "height"
-                   
-			}	
+
+			}
 		}
 	},
 	p6561: //Carbon Fiber Hat
@@ -3121,7 +3142,7 @@ var ProductInfo =
 				designMaxHeight : 0.280909,
                   rule : "height",
                   align: "bottom"
-			}	
+			}
 		}
 	},
 	p6566 :
@@ -3134,7 +3155,7 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["red","dark green","royal","navy","purple","black","white","orange"], 
+		allColors: ["red","dark green","royal","navy","purple","black","white","orange"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 		{
@@ -3147,7 +3168,7 @@ var ProductInfo =
 				designMaxHeight : 0.081818,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p6571 :
@@ -3160,7 +3181,7 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["red","dark green","royal","navy","black","white","grey"], 
+		allColors: ["red","dark green","royal","navy","black","white","grey"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 		{
@@ -3196,7 +3217,7 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-         allColors: ["yellow","dark green","royal","purple","black","orange","burgundy","pink"], 
+         allColors: ["yellow","dark green","royal","purple","black","orange","burgundy","pink"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 		{
@@ -3209,7 +3230,7 @@ var ProductInfo =
 				designMaxHeight : 0.082576,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p6580 :
@@ -3222,7 +3243,7 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["royal","navy","purple","black","white"], 
+		allColors: ["royal","navy","purple","black","white"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 		{
@@ -3261,7 +3282,7 @@ var ProductInfo =
 				designMaxHeight : 0.081818,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
 	p7595:
@@ -3287,7 +3308,7 @@ var ProductInfo =
 				designMaxHeight : 0.24183,
                   rule : "height",
                   align: "bottom"
-			}	
+			}
 		}
 	},
 	p12909:
@@ -3308,7 +3329,7 @@ var ProductInfo =
 				designMaxHeight : 0.103788,
                   align: "center",
                   rule: "hypotenuse"
-			}	
+			}
 		}
 	},
 	p7608: //project(s)
@@ -3329,7 +3350,7 @@ var ProductInfo =
 				designMaxHeight : 0.26183,
                   align: "center",
                   rule: "hypotenuse"
-			}	
+			}
 		}
 	},
 	p8612: //project(a)
@@ -3350,7 +3371,7 @@ var ProductInfo =
 				designMaxHeight : 0.26183,
                   align: "center",
                   rule: "hypotenuse"
-			}	
+			}
 		}
 	},
 	p9646:
@@ -3361,7 +3382,7 @@ var ProductInfo =
 		overrides:
 		{
 			light: [""],
-			dark: [""]
+			dark: ["grey"]
 		},
 		allColors: ["red","yellow","dark green","royal","navy","purple","black","grey","white","orange"],
 		designs: ["team","mascot"],
@@ -3376,7 +3397,7 @@ var ProductInfo =
 				designMaxHeight : 0.081818,
                   rule: "square",
                   align: "center"
-			}	
+			}
 		}
 	},
     p9647 :
@@ -3389,7 +3410,7 @@ var ProductInfo =
 			light: [""],
 			dark: [""]
 		},
-		allColors: ["black","grey","navy","white"], 
+		allColors: ["black","grey","navy","white"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 		{
@@ -3429,17 +3450,17 @@ var ProductInfo =
 			light: [""],
 			dark: ["grey"]
 		},
-		allColors: ["red","maroon","athletic gold","dark green","royal","navy","black","grey","white","orange"], 
+		allColors: ["red","maroon","athletic gold","dark green","royal","navy","black","grey","white","orange"],
 		designs : ["team","mascot"],
 		designLocationInformation :
 		{
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.493056,
-				designHeight : 0.805556,
-				designMaxWidth : 0.071296,
-				designMaxHeight : 0.078296,
+				designCenter : 0.411881,
+				designHeight : 0.818939,
+				designMaxWidth : 0.066007,
+				designMaxHeight : 0.075758,
                   rule: "square",
                   align: "center"
              }
@@ -3468,7 +3489,7 @@ var ProductInfo =
 				designMaxHeight : 0.422727,
                   align : "center",
                   rule: "hypotenuse"
-			}	
+			}
 		}
 	},
 	p12994: //PitchFix Fusion
@@ -3489,8 +3510,8 @@ var ProductInfo =
 				designMaxHeight : 0.176515,
                   align : "center",
                   rule: "hypotenuse"
-            },	
-            "secondLocation" : 
+            },
+            "secondLocation" :
             {
                   name : "multiLocations-second",
 				designCenter : 0.670297,
@@ -3520,8 +3541,8 @@ var ProductInfo =
 				designMaxHeight : 0.168182,
                   align : "center",
                   rule: "hypotenuse"
-            },	
-            "secondLocation" : 
+            },
+            "secondLocation" :
             {
                   name : "multiLocations-second",
 				designCenter : 0.662046,
@@ -3551,8 +3572,8 @@ var ProductInfo =
 				designMaxHeight : 0.168182,
                   align : "center",
                   rule: "hypotenuse"
-            },	
-            "secondLocation" : 
+            },
+            "secondLocation" :
             {
                   name : "multiLocations-second",
 				designCenter : 0.660066,
@@ -3586,4 +3607,3 @@ var ProductInfo =
 		}
 	}
 }
-
