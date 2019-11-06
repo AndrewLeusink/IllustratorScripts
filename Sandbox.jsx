@@ -211,7 +211,7 @@ function StoreSchoolData(dataString){
 
                        var currentDesignImage = GetFileName(["design",currentDesign],schoolNames.CMH,currentProduct,currentProductColor,currentDesign,designsFolder,schoolNames.mascotImage,schoolNames.mascot,store,schoolNames.apparelImage,schoolNames.headwearImage);
 
-                       if (currentDesignImage.indexOf("Source") == -1)
+                       if (currentDesignImage.indexOf("Source") == -1) 
                        {
                            if (/*currentDesignImage.indexOf("light") != -1 && */currentDesignImage.indexOf("blank") == -1){
                            SaveDesign(currentDesignImage,currentDesign,schoolNames.CMH,destFolder,blanksFolder,designsFolder,store);
