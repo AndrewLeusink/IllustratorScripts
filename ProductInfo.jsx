@@ -164,7 +164,7 @@ var ProductInfo =
              light : [""],
              dark : [""]
          },
-         designs : ["d9"],
+         designs : ["d9","d13"],
 		designLocationInformation :
 		{
             "all" :
@@ -698,7 +698,7 @@ var ProductInfo =
 	p10659:
 	{
 		name : "p10659",
-		stores: [""],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1658,7 +1658,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "ht",
 		allColors: ["black"],
-		designs: ["d1","d10"],
+		designs: ["d1","d10","d20"],
         overrides:
 		{
 			light: ["black"],
@@ -1689,7 +1689,7 @@ var ProductInfo =
 			light: ["royal"],
 			dark: [""]
 		},
-		designs: ["d1","d10"],
+		designs: ["d1","d10","d20"],
 		designLocationInformation:
 		{
 			"all" :
@@ -2272,7 +2272,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "sub",
 		allColors: ["white"],
-		designs: ["d1","d2","d5"],
+		designs: ["d1","d2","d5","d20"],
 		designLocationInformation:
 		{
 			"all" :
@@ -2292,7 +2292,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "dtg",
 		allColors: ["red","maroon","athletic gold","dark green","royal","navy","purple","black","grey","white","orange"],
-		designs: ["d1","d2","d3"],
+		designs: ["d1","d2","d3","d19"],
 		designLocationInformation:
 		{
 			"all" :
@@ -2783,7 +2783,7 @@ var ProductInfo =
 		stores: ["emb"],
 		process: "ht",
 		allColors: ["black"],
-		designs: ["d1","d10"],
+		designs: ["d1","d10","d20"],
 		designLocationInformation:
 		{
 			"all" :
@@ -2804,7 +2804,7 @@ var ProductInfo =
 		stores: ["emb"],
 		process: "ht",
 		allColors: ["black","navy","royal"],
-		designs: ["d1","d10"],
+		designs: ["d1","d10","d20"],
 		designLocationInformation:
 		{
 			"all" :
@@ -2825,7 +2825,7 @@ var ProductInfo =
 		stores: ["emb"],
 		process: "ht",
 		allColors: ["black"],
-		designs: ["d1","d10"],
+		designs: ["d1","d10","d20"],
 		designLocationInformation:
 		{
 			"all" :
@@ -3002,7 +3002,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "dtg",
 		allColors: ["red","royal","navy","black","grey","charcoal"],
-		designs: ["d1","d2","d3"],
+		designs: ["d1","d2","d3","d19"],
 		designLocationInformation:
 		{
 			"all" :
@@ -3021,7 +3021,7 @@ var ProductInfo =
 		stores: [""],
 		process: "ht",
 		allColors: ["navy","royal"],
-		designs: ["d1","d10"],
+		designs: ["d1","d10","d20"],
         overrides:
 		{
 			light: ["navy","royal"],
