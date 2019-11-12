@@ -1,9 +1,8 @@
-﻿
-//var progressBarCurrent = 0;
+﻿//var progressBarCurrent = 0;
 //var progressBar100Percent = 0;
 //var lastProgress = 0;
 
-#include Utilities.jsx
+#include include\Utilities.jsx
 
 Main();
     
@@ -13,8 +12,8 @@ function Main()
 
     var store = "team"
     
-    var myFolder = Folder("C:\\Users\\eric.brown\\Desktop\\Generated SVGs");  
-    var destFolder = Folder("C:\\Users\\eric.brown\\Desktop\\GeneratedImages");    
+    var myFolder = Folder("C:\\Users\\a.leusink\\Desktop\\Generated SVGs");  
+    var destFolder = Folder("C:\\Users\\a.leusink\\Desktop\\Generated Images");    
     //var myFolder = Folder("F:\\Generated SVGs");  
     //var destFolder = Folder("F:\\Generated Images"); 
     
@@ -34,7 +33,7 @@ function Main()
         var newDocName = NewDocName(fileList[iFile].name);
         var checkName = destFolder + "\\" + newDocName + ".png";    
         
-        if  (File(checkName.replace(".svg",".png").replace("%20"," ").replace("%20"," ").replace(" ","-").replace(" ","-").replace("Generated-Images","GeneratedImages")).exists)
+        if  (File(checkName.replace(".svg",".png").replace("%20"," ").replace("%20"," ").replace(" ","-").replace(" ","-").replace("Generated-Images","Generated Images")).exists)
         {
         }
         else
@@ -76,12 +75,12 @@ function Main()
                // //var folderList = GetFolders(dir);
                 //var printFolder = FolderCreation(folderList, newDocName,dir);
                             
-                ExportPNG24noClipping("C:\\Users\\eric.brown\\Desktop\\GeneratedImages\\" + newDocName);
+                ExportPNG24noClipping("C:\\Users\\a.leusink\\Desktop\\Generated Images\\" + newDocName);
                 //ExportPNG24(destFolder + "\\" + newDocName);
                 
                 app.executeMenuCommand('doc-color-cmyk');
          
-                ExportEPS("C:\\Users\\eric.brown\\Desktop\\GeneratedImages\\" + newDocName);
+                ExportEPS("C:\\Users\\a.leusink\\Desktop\\Generated Images\\" + newDocName);
             }
         
             //Pick Your Print
@@ -1486,7 +1485,6 @@ function DesignActions(doc, design)
             strokeColor.green = 255;
             strokeColor.blue = 255;
             
-
             var numPaths = doc.pathItems.length;
             $.writeln(numPaths);
             var thePaths = doc.pathItems;
@@ -1501,14 +1499,11 @@ function DesignActions(doc, design)
                 var pathArt = thePaths[colori];
                 pathArt.selected = true;
                 pathArt.stroked = true;
-
                 pathArt.strokeColor = strokeColor;
-
                 pathArt.strokeWidth = 3;
                 pathArt.strokeCap = StrokeCap.ROUNDENDCAP;
                 pathArt.strokeMiterLimit = 5;
                 //pathArt.fillColor = fillColor;
-
                 }
             
             var action = new File (['/p/JordanRunstein/illustratorActions/alignStrokeOutside.aia']);
@@ -1598,11 +1593,11 @@ function DesignActions(doc, design)
             getItemByName("textLine11");
             textLine11 = app.selection[0];
             doc.selection = null;
+
             /*
             getItemByName("textLine12");       
             var textLine12 = app.selection[0];  
             textLine12.createOutline().name = "textLine12";
-
             doc.selection = null;
             getItemByName("textLine12");
             textLine12 = app.selection[0];
@@ -1677,8 +1672,8 @@ function DesignActions(doc, design)
             getItemByName("mascotImage");
             var mascotImage = app.selection[0];
             
-            var lenCPI = doc.groupItems[0].compoundPathItems.length - 1;
-            
+            var lenCPI = doc.groupItems[0].compoundPathItems.length - 1;            
+
             $.writeln("///// BEFORE CHANGE /////");
             $.writeln("mascotimage x: " + mascotImage.position[0]);
             $.writeln("mascotimage y: " + mascotImage.position[1]);
@@ -1781,13 +1776,11 @@ function DesignActions(doc, design)
             app.loadAction(action);
             app.doScript("alignStroke","alignStrokeOutside");
             app.unloadAction("alignStrokeOutside","");
-
             var strokeColor = new RGBColor();
             strokeColor.red = 255;
             strokeColor.green = 255;
             strokeColor.blue = 255;
             
-
         
             var numPaths = doc.pathItems.length;
             $.writeln(numPaths);
@@ -1803,14 +1796,11 @@ function DesignActions(doc, design)
                 var pathArt = thePaths[colori];
                 pathArt.selected = true;
                 pathArt.stroked = true;
-
                 pathArt.strokeColor = strokeColor;
-
                 pathArt.strokeWidth = 6;
                 pathArt.strokeCap = StrokeCap.ROUNDENDCAP;
                 pathArt.strokeMiterLimit = 5;
                 //pathArt.fillColor = fillColor;
-
                 }
             */
 
@@ -2016,7 +2006,6 @@ function DesignActions(doc, design)
             /*getItemByName("textLine2");        
             var textLine2 = app.selection[0];  
             textLine2.createOutline().name = "textLine2";
-
             doc.selection = null;
             getItemByName("textLine2");
             textLine2 = app.selection[0];
@@ -2025,7 +2014,6 @@ function DesignActions(doc, design)
             getItemByName("textLine11");       
             var textLine11 = app.selection[0];  
             textLine11.createOutline().name = "textLine11";
-
             doc.selection = null;
             getItemByName("textLine11");
             textLine11 = app.selection[0];
@@ -2034,7 +2022,6 @@ function DesignActions(doc, design)
             getItemByName("textLine12");       
             var textLine12 = app.selection[0];  
             textLine12.createOutline().name = "textLine12";
-
             doc.selection = null;
             getItemByName("textLine12");
             textLine12 = app.selection[0];
@@ -2043,7 +2030,6 @@ function DesignActions(doc, design)
             getItemByName("textLine13");       
             var textLine13 = app.selection[0];  
             textLine13.createOutline().name = "textLine13";
-
             doc.selection = null;
             getItemByName("textLine13");
             textLine13 = app.selection[0];
@@ -2105,7 +2091,481 @@ function DesignActions(doc, design)
             
             resizeArtboard (doc,bars, bars, bars, mascotImage);
         }
+
+  if(design == "TeamStoreDesign15"){
+      
+      getItemByName("textgroup");
+      var textgroup = app.selection[0];
+      $.writeln("textgroup typename: " + textgroup.typename);
+      rotMatrix = app.getRotationMatrix(-90);
+      textgroup.transform(rotMatrix);
+            var action = new File (['/p/JordanRunstein/illustratorActions/duplicateWithStroke.aia']);
+            app.loadAction(action);
+            app.doScript("DWS","duplicateWithStroke");
+            app.unloadAction("duplicateWithStroke", "");
+            
+      resizeArtboard(doc,textgroup,textgroup,textgroup,textgroup);
+      
+      
+
+      
+      }
+  
+  if(design == "TeamStoreDesign16"){
+            getItemByName("textLine1");        
+            var textLine1 = app.selection[0];  
+            test1 = textLine1.createOutline()
+            test1.name = "textLine1";
+            doc.selection = null;
+      
+            getItemByName("textLine2");
+            var textLine2 = app.selection[0];
+            $.writeln("text contents: " + textLine2.contents);
+
+            test2 = textLine2.createOutline();
+            test2.name = "textLine2";
+            
+            doc.selection = null;
+            
+            getItemByName("mascotImage");
+            getItemByName("textLine1");
+            textLine11 = app.selection[0];
+            var shearFactor = 0.125;
+            var theta = Math.PI/4 - 1/2*Math.atan(shearFactor*(Math.PI*2/360)); //math.sin and math.cos take values in radians
+            var phi = -Math.PI/4 - 1/2*Math.atan(shearFactor*(Math.PI*2/360));
+            
+            matrix1 = app.getRotationMatrix(phi*360/(2*Math.PI)); //rotation matrix only takes degrees
+            matrix2 = app.getScaleMatrix(100*(Math.sqrt( Math.pow(shearFactor,2) +1 ) - shearFactor), 100*(Math.sqrt( Math.pow(shearFactor,2) +1 ) + shearFactor));
+            matrix3 = app.getRotationMatrix(theta*360/(2*Math.PI));
+            matrix4 = app.getRotationMatrix(-7);
+            var concat1 = app.concatenateMatrix(matrix4,matrix3);
+            var concat2 = app.concatenateMatrix(concat1,matrix2);
+            var finalMatrix = app.concatenateMatrix(concat2,matrix1);
+
+            for (var sheari = 0; sheari < test1.compoundPathItems.length; sheari++){
+          
+                test1.compoundPathItems[sheari].transform(finalMatrix);
+
+                }
+            for (var sheari2 = 0; sheari2 < test2.compoundPathItems.length; sheari2++){
+                test2.compoundPathItems[sheari2].transform(finalMatrix);
+                }
+            
+            newTest1Pos = test2.height;
+            transMatrix = app.getTranslationMatrix(0, newTest1Pos+10);
+            test1.transform(transMatrix);
+            doc.selection = null;
+            test1.selected = true;
+            test2.selected = true;
+            
+            
+            var action = new File (['/p/JordanRunstein/illustratorActions/rotate15deg.aia']);
+            app.loadAction(action);
+            app.doScript("rotate","rotate15deg");
+            app.unloadAction("rotate15deg", "");
+            height = 71.35;
+            width = 106.25;
+            //scaleMatrix = app.getScaleMatrix(width/mascotImage.width*100, height/mascotImage.height*100);
+
+            //mascotImage.transform(scaleMatrix);
+            left = test2.left + .15*test2.height;
+            top = test2.width;
+            temprect = doc.pathItems.rectangle(left,top,width,height);
+            
+            getItemByName("rects");
+            var rects = app.selection[0];
+            
+            
+            }
+        
+        if(design == "TeamStoreDesign17"){
+            getItemByName("textline1");
+            textline1 = app.selection[0];
+            text1 = textline1.createOutline();
+            text1.name = "textline1";
+            doc.selection = null;
+            
+            getItemByName("golfteam");
+            golfteam = app.selection[0];
+            text2 = golfteam.createOutline();
+            text2.name = "golfteam";
+            doc.selection = null;
+            
+            getItemByName("arch");
+            arch = app.selection[0];
+            doc.selection = null;
+            
+            midx = arch.position[0] + arch.width/2;
+            dx1 = midx-text1.position[0] - text1.width/2;
+            dx2 = midx-text2.position[0] - text2.width/2;
+            $.writeln(dx1 + " " + dx2);
+            transMatrix1 = app.getTranslationMatrix(dx1,0);
+            transMatrix2 = app.getTranslationMatrix(dx2,0);
+            
+            text1.transform(transMatrix1);
+            text2.transform(transMatrix2);
+            
+            var action = new File (['/p/JordanRunstein/illustratorActions/duplicateWithStroke.aia']);
+            app.loadAction(action);
+            app.doScript("DWS","duplicateWithStroke");
+            app.unloadAction("duplicateWithStroke", "");            
+            
+            resizeArtboard(doc, text2, arch, text2, text2);
+            
+            
+            }
+        
+         if(design == "TeamStoreDesign18"){
+             
+            getItemByName("textLine1");
+            textLine1 = app.selection[0];
+            $.writeln(textLine1.textFrames[0].contents);
+            
+            for(var t18i = 0; t18i<textLine1.textFrames[0].characters.length; t18i++){
+                        textLine1.textFrames[0].characters[t18i].characterAttributes.strokeColor = textLine1.textFrames[0].characters[t18i].characterAttributes.fillColor;
+                        textLine1.textFrames[0].characters[t18i].characterAttributes.strokeWeight = 5;
+                        
+                        
+                    }
+             
+
+             
+           
+
+            str = textLine1.textFrames[0].contents;
+            str = str+"GOLF";
+            textLine1.textFrames[0].contents = str;
+            $.writeln(textLine1.textFrames[0].contents);
+            
+             for(var t18j = 0; t18j<textLine1.textFrames[0].characters.length; t18j++){
+                 if( t18j >= textLine1.textFrames[0].characters.length - 4){
+                        textLine1.textFrames[0].characters[t18j].characterAttributes.strokeColor = textLine1.textFrames[0].characters[t18j].characterAttributes.fillColor;
+                        textLine1.textFrames[0].characters[t18j].characterAttributes.strokeWeight = 0;
+                        }
+                        
+                        
+                    }            
+            
+            getItemByName("golfclubs");
+            golfclubs = app.selection[0];
+            
+            textLine1.translate(golfclubs.position[0]+golfclubs.width/2 - textLine1.width/2 - textLine1.position[0],0);
+            
+                        var action = new File (['/p/JordanRunstein/illustratorActions/duplicateWithStroke.aia']);
+            app.loadAction(action);
+            app.doScript("DWS","duplicateWithStroke");
+            app.unloadAction("duplicateWithStroke", "");
+            
+            resizeArtboard(doc, textLine1, golfclubs, textLine1, golfclubs);
+
+        
+             
+             }
+            
+            if(design == "TeamStoreDesign19"){
+                getItemByName("textLine1");
+                textLine1 = app.selection[0];
+                for(var t19i = 0; t19i<textLine1.characters.length; t19i++){
+                    if(t19i == 0 || t19i == textLine1.characters.length - 1){
+                        textLine1.characters[t19i].characterAttributes.size = 139;
+                        }
+                    }
+                text1 = textLine1.createOutline();
+                text1.name = "textLine1";
+                doc.selection = null;
+                
+                getItemByName("textLine2");
+                textLine2 = app.selection[0];
+                text2 = textLine2.createOutline();
+                text2.name = "textLine2";
+                doc.selection = null;
+                
+                targetPointx = text1.position[0]+text1.width/2 - text2.width/2;
+                targetPointy = text1.position[1] - text2.height;
+                transMatrix = app.getTranslationMatrix(targetPointx-text2.position[0], -0.72*text2.height);
+                text2.transform(transMatrix);
+                getItemByName("mascotImage");
+                mascotImage = app.selection[0];
+                targetMascotx = text1.position[0]+text1.width/2 - mascotImage.width/2;
+                targetMascoty = text1.position[1]+mascotImage.height;
+                mascotImage.translate(targetMascotx-mascotImage.position[0], targetMascoty - mascotImage.position[1]);
+                
+                            var action = new File (['/p/JordanRunstein/illustratorActions/duplicateWithStroke.aia']);
+            app.loadAction(action);
+            app.doScript("DWS","duplicateWithStroke");
+            app.unloadAction("duplicateWithStroke", "");
+                
+                resizeArtboard(doc,text1,mascotImage,text1,text2);
+
+
+                }
+            
+            if(design == "TeamStoreDesign20"){
+                getItemByName("bigletter");
+                bigletter = app.selection[0];
+                $.writeln("bigletter typename: " + bigletter.groupItems[0].textFrames[1].name);
+                blockletter = bigletter.groupItems[0].textFrames[0].createOutline();
+                
+                doc.selection = null;
+                
+                
+                
+                getItemByName("textLine1");
+                textLine1 = app.selection[0];
+                $.writeln("text1 typename: " +textLine1.typename);
+                doc.selection = null;
+
+                
+                getItemByName("textLine2");
+                textLine2 = app.selection[0];
+                $.writeln("text2 typename: " +textLine2.typename);
+                doc.selection = null;
+                
+                midpointx = textLine2.position[0] + textLine2.width/2 - blockletter.width/2 - blockletter.width/10;
+                midpointy = textLine2.position[0] + 4.40*blockletter.height/2;
+                
+                midtext1x =  textLine2.position[0] + textLine2.width/2 -textLine1.width/2;
+                
+                transMatrixt1 = app.getTranslationMatrix(midtext1x-textLine1.position[0],0);
+            
+                textLine1.transform(transMatrixt1);
+                
+                transMatrix = app.getTranslationMatrix(midpointx-bigletter.position[0], midpointy-blockletter.position[1]);
+                bigletter.transform(transMatrix);
+                
+                scaleMatrix = app.getScaleMatrix(200,150);
+                bigletter.transform(scaleMatrix,true,false,false,false, 0, Transformation.CENTER);
+                
+                
+                            var action = new File (['/p/JordanRunstein/illustratorActions/duplicateWithStroke.aia']);
+            app.loadAction(action);
+            app.doScript("DWS","duplicateWithStroke");
+            app.unloadAction("duplicateWithStroke", "");
+
+                resizeArtboard(doc, textLine2,blockletter,textLine2,blockletter);
+
+
+                }
+            
+            if(design == "TeamStoreDesign21"){
+                getItemByName("bigGroup");
+                bigGroup = app.selection[0];
+                 var activeABindex = doc.artboards.getActiveArtboardIndex();  
+                var newAB = doc.artboards[activeABindex];
+
+                var iartBounds = doc.visibleBounds;  
+
+                
+                getItemByName("textLine1");
+                textLine1 = app.selection[0];
+                doc.selection = null;
+                
+                getItemByName("textLine2");
+                textLine2 = app.selection[0];
+                
+                doc.selection = null;
+                
+                getItemByName("middleDesign");
+                middleDesign = app.selection[0];
+                doc.selection = null;
+                
+                text2 = textLine2.textFrames[0].createOutline();
+                
+               targetx1 = middleDesign.position[0] + middleDesign.width/2 - textLine1.width/2 + middleDesign.width*(0.1);
+                
+                targetx2 = middleDesign.position[0] + middleDesign.width/2 - text2.width/2;
+                //$.writeln(targetx);
+                textLine2.translate(targetx2-textLine2.position[0],0);
+                textLine1.translate(targetx1-textLine1.position[0],0);
+                
+                if (textLine1.width > middleDesign.width){
+                    ableft = textLine1.controlBounds[0] - 5;
+                    abright = textLine1.controlBounds[2] + 5;
+                    abtop = textLine1.controlBounds[1] -225;
+                    abbottom = textLine1.controlBounds[3] - 5;
+                    }
+                else{
+                    ableft = middleDesign.controlBounds[0]-5;
+                    abtop = textLine1.controlBounds[1]-225;
+                    abright = middleDesign.controlBounds[2]+5;
+                    abbottom = textLine2.controlBounds[3]-5;
+                    }
+                
+                
+
+
+                newAB.artboardRect = [ableft, abtop, abright, abbottom];
+//                resizeArtboard(doc, bigGroup, bigGroup, bigGroup, bigGroup);
+
+
+                }
+            
+            if(design == "TeamStoreDesign22"){
+                
+            getItemByName("textLine1");  
+            textLine1 = app.selection[0];
+
+            var action = new File (['/p/JordanRunstein/illustratorActions/lowerArc50.aia']);
+            app.loadAction(action);
+            app.doScript("applyEffect","lowerArc50");
+            app.unloadAction("lowerArc50", "");
+            doc.selection = null;
+
+            
+            
+            getItemByName("mascotImage");
+            app.copy();
+            app.paste();
+            doc.selection = null;
+            
+            getItemByName("mascotImage");
+            mascotImage = app.selection[0];
+            scaleMatrix = app.getScaleMatrix(100/mascotImage.width*100,100*100/mascotImage.height);
+            mascotImage.transform(scaleMatrix);
+            
+            targetx = textLine1.position[0] + textLine1.width/2 - mascotImage.width/2;
+            targety = textLine1.position[1] - mascotImage.height/4;
+            transMatrix = app.getTranslationMatrix(targetx-mascotImage.position[0], targety-mascotImage.position[1]);
+            mascotImage.transform(transMatrix);
+                
+                
+                              var action = new File (['/p/JordanRunstein/illustratorActions/duplicateWithStroke.aia']);
+            app.loadAction(action);
+            app.doScript("DWS","duplicateWithStroke");
+            app.unloadAction("duplicateWithStroke", "");     
+                /*
+            text = textLine1.textFrames[0].createOutline();
+            //text = textLine1.textFrames;
+            $.writeln(textLine1);
+            $.writeln(text.contents);
+            text1 = text[0].createOutline();
+            text2 = text[1].createOutline();
+            
+            scaleMatrix2 = app.getScaleMatrix(100,125);
+            text.transform(scaleMatrix2);
+            */
+        
+                        var activeABindex = doc.artboards.getActiveArtboardIndex();  
+                var newAB = doc.artboards[activeABindex];
+
+                var iartBounds = doc.visibleBounds;  
+
+                var ableft = textLine1.controlBounds[0]*.8;  
+                var abtop =textLine1.controlBounds[1]*1.15;  
+                var abright = textLine1.controlBounds[2]*.8; // + right.width;  
+                var abbottom = mascotImage.controlBounds[3];// - bottom.height;  
+
+
+
+                newAB.artboardRect = [ableft, abtop, abright, abbottom];
+
+                }
+            
+            if(design == "TeamStoreDesign23"){
+                getItemByName("bigGroup");
+                bigGroup = app.selection[0];
+                
+                var activeABindex = doc.artboards.getActiveArtboardIndex();  
+                var newAB = doc.artboards[activeABindex];
+
+                var iartBounds = doc.visibleBounds;  
+
+                var ableft = bigGroup.controlBounds[0] +128;  
+                var abtop =bigGroup.controlBounds[1] - 260;  
+                var abright = bigGroup.controlBounds[2] -3; // + right.width;  
+                var abbottom = bigGroup.controlBounds[3];// - bottom.height;  
+
+                newAB.artboardRect = [ableft, abtop, abright, abbottom];
+
+                
+//                resizeArtboard(doc,bigGroup,bigGroup,bigGroup,bigGroup);
+
+                }
+            
+            if(design == "TeamStoreDesign24"){
+                getItemByName("bigGroup");
+                bigGroup = app.selection[0];
+                doc.selection = null;
+                
+                scaleMatrix = app.getScaleMatrix(500,500);
+                bigGroup.transform(scaleMatrix);
+                
+                getItemByName("textLine1");
+                textLine1 = app.selection[0];
+                
+                
+                $.writeln(textLine1.typename);
+                $.writeln(textLine1.kind);
+                $.writeln(textLine1.textFrames[0].contents);
+                $.writeln(textLine1.textFrames[0].characters.length);
+                
+                len = textLine1.textFrames[0].characters.length;
+                
+                //rect = doc.pathItems.rectangle(textLine1.position[1],textLine1.position[0], 211.5, 57.92);                
+                //newareatext = doc.textFrames.areaText(rect);
+                //newareatext.contents = textLine1.textFrames[0].contents;
+                
+                
+                
+                
+                //textLine1.textFrames.areaText = newareatext;
+                
+                
+                
+
+                
+
+                
+                
+                if(len == 4){
+                    textLine1.textFrames[0].contents = textLine1.textFrames[0].contents + "  GOLF";
+                    for(t24i = 0; t24i < textLine1.textFrames[0].characters.length; t24i++){
+                        textLine1.textFrames[0].characters[t24i].characterAttributes.horizontalScale = 85;
+                        }
+                    }
+                else{
+                    textLine1.textFrames[0].contents = textLine1.textFrames[0].contents + " GOLF";
+                     for(t24i = 0; t24i < textLine1.textFrames[0].characters.length; t24i++){
+                        textLine1.textFrames[0].characters[t24i].characterAttributes.horizontalScale = 115;
+                        }
+                    }
+                
+                //charstyle = doc.characterStyles.add("desiredText");
+                //charstyle = textLine1.textFrames[0].characterStyles;
+                
+                //charstyle.applyTo(newareatext.characters);
+                
+                posx = textLine1.position[0];
+                if(len == 4){
+                    
+                    scaleMatrix2 = app.getScaleMatrix(120,100);
+                    }
+                else{
+                    
+             var action = new File (['/p/JordanRunstein/illustratorActions/textAreaAdjust.aia']);
+            app.loadAction(action);
+            app.doScript("TAA","textAreaAdjust");
+            app.unloadAction("textAreaAdjust","");
+            scaleMatrix2 = app.getScaleMatrix(100,100);
+
+                    }
+                    
+                textLine1.transform(scaleMatrix2);
+                textLine1.translate(posx - textLine1.position[0]);
+                
+              var action = new File (['/p/JordanRunstein/illustratorActions/duplicateWithStroke.aia']);
+            app.loadAction(action);
+            app.doScript("DWS","duplicateWithStroke");
+            app.unloadAction("duplicateWithStroke", "");              
+                
+                
+
+                resizeArtboard(doc,bigGroup,bigGroup,bigGroup,bigGroup);
+                }
+            
+    
 }
+
 
 function resizeArtboard(doc,left,top,right,bottom)
 {
