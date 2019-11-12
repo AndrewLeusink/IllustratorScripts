@@ -1,4 +1,4 @@
-
+﻿
 var StoreInfo =
 {
     fan : "",
@@ -25,7 +25,7 @@ var ProductInfo =
     pmensapparelbutton :
      {
          name : "pmensapparelbutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["black","dark green","gold","grey","maroon","navy","orange","red","royal","white"],
          fallback: ["grey"],
@@ -51,7 +51,7 @@ var ProductInfo =
  	pwomensapparelbutton :
      {
          name : "pwomensapparelbutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["black","dark green","gold","grey","maroon","navy","orange","purple","red","royal","white"],
          fallback: ["grey"],
@@ -77,7 +77,7 @@ var ProductInfo =
     paccessoriesbutton :
      {
          name : "paccessoriesbutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["white"],
          fallback: ["white"],
@@ -103,7 +103,7 @@ var ProductInfo =
      pheadwearbutton :
      {
          name : "pheadwearbutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["white"],
          fallback: ["white"],
@@ -130,7 +130,7 @@ var ProductInfo =
      pfootwearbutton :
      {
          name : "pfootwearbutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["white"],
          fallback: ["white"],
@@ -155,7 +155,7 @@ var ProductInfo =
      pequipmentbutton :
      {
          name : "pequipmentbutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["white","royal","black","red","grey"],
          fallback: ["grey"],
@@ -189,7 +189,7 @@ var ProductInfo =
  	pmensapparelmobilebutton :
      {
          name : "pmensapparelmobilebutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["black","dark green","gold","grey","maroon","navy","orange","red","royal","white"],
          fallback: ["grey"],
@@ -215,7 +215,7 @@ var ProductInfo =
  	pwomensapparelmobilebutton :
      {
          name : "pwomensapparelmobilebutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["black","dark green","gold","grey","maroon","navy","orange","purple","red","royal","white"],
          fallback: ["grey"],
@@ -241,7 +241,7 @@ var ProductInfo =
     paccessoriesmobilebutton :
      {
          name : "paccessoriesmobilebutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["white"],
          fallback: ["white"],
@@ -267,7 +267,7 @@ var ProductInfo =
      pheadwearmobilebutton :
      {
          name : "pheadwearmobilebutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["white"],
          fallback: ["white"],
@@ -295,7 +295,7 @@ var ProductInfo =
      pfootwearmobilebutton :
      {
          name : "pfootwearmobilebutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["white"],
          fallback: ["white"],
@@ -320,7 +320,7 @@ var ProductInfo =
      pequipmentmobilebutton :
      {
          name : "pequipmentmobilebutton",
-         stores: ["BLARG"],
+         stores: ["team"],
          process: "button",
          allColors: ["white"],
          fallback: ["white"],
@@ -454,7 +454,7 @@ var ProductInfo =
 	p10649 :
 	{
 		name : "p10649",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -468,10 +468,20 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.405281,
-				designHeight : 0.777273,
-				designMaxWidth : 0.069967,
-				designMaxHeight : 0.080303,
+                                designCenter : 0.570557,
+                                designHeight : 0.798627,
+                                designMaxWidth : 0.091533,
+                                designMaxHeight : 0.089245,
+                  rule: "square",
+                  align: "center"
+			},
+			"purple" :
+			{
+				name : "purple",
+                                designCenter : 0.576886,
+                                designHeight : 0.781431,
+                                designMaxWidth : 0.113153,
+                                designMaxHeight : 0.113153,
                   rule: "square",
                   align: "center"
 			}
@@ -480,7 +490,7 @@ var ProductInfo =
 	p10650 :
 	{
 		name : "p10650",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -494,10 +504,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.374917,
-				designHeight : 0.805212, // too low designHeight : 0.800212,
-				designMaxWidth : 0.06727,
-				designMaxHeight : 0.077273,
+                                designCenter : 0.550763,
+                                designHeight : 0.829771,
+                                designMaxWidth : 0.09084,
+                                designMaxHeight : 0.09084,
                   rule: "square",
                   align: "center"
 			}
@@ -506,7 +516,7 @@ var ProductInfo =
 	p10653 :
 	{
 		name : "p10653",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -520,10 +530,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.368977,
-				designHeight : 0.810606,
-				designMaxWidth : 0.069967,
-				designMaxHeight : 0.080303,
+                                designCenter : 0.563218,
+                                designHeight : 0.833716,
+                                designMaxWidth : 0.087356,
+                                designMaxHeight : 0.087356,
                   rule: "square",
                   align: "center"
 			}
@@ -532,7 +542,7 @@ var ProductInfo =
 	p10654 :
 	{
 		name : "p10654",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -546,20 +556,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.586139,
-				designHeight : 0.795455,
-				designMaxWidth : 0.066007,
-				designMaxHeight : 0.075758,
-                  rule: "square",
-                  align: "center"
-			},
-			"white" :
-			{
-				name : "white",
-				designCenter : 0.594059,
-				designHeight : 0.795455,
-				designMaxWidth : 0.066007,
-				designMaxHeight : 0.075758,
+                                designCenter : 0.599617,
+                                designHeight : 0.801533,
+                                designMaxWidth : 0.091188,
+                                designMaxHeight : 0.091188,
                   rule: "square",
                   align: "center"
 			}
@@ -568,7 +568,7 @@ var ProductInfo =
 	p10655 :
 	{
 		name : "p10655",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -582,10 +582,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.366238,
-				designHeight : 0.797727,
-				designMaxWidth : 0.071327,
-				designMaxHeight : 0.078,
+                                designCenter : 0.557736,
+                                designHeight : 0.807547,
+                                designMaxWidth : 0.0933585,
+                                designMaxHeight : 0.09283,
                   rule: "square",
                   align: "center"
 			}
@@ -594,7 +594,7 @@ var ProductInfo =
 	p10656:
 	{
 		name : "p10656",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -608,36 +608,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.356766,
-				designHeight : 0.804545,
-				designMaxWidth : 0.071947,
-				designMaxHeight : 0.080303,
-                  rule: "square",
-                  align: "center"
-			}
-		}
-	},
-	p10656:
-	{
-		name : "p10656",
-		stores: ["BLARG"],
-		process: "emb",
-		overrides:
-		{
-			light: ["royal"],
-			dark: [""]
-		},
-		allColors: ["black","white","dark green","gold","grey","maroon","navy","orange","red","royal"],
-		designs: ["team","mascot"],
-		designLocationInformation:
-		{
-			"all" :
-			{
-				name : "all",
-				designCenter : 0.353465,
-				designHeight : 0.810606,
-				designMaxWidth : 0.071947,
-				designMaxHeight : 0.082576,
+                                designCenter : 0.55,
+                                designHeight : 0.803053,
+                                designMaxWidth : 0.084733,
+                                designMaxHeight : 0.084733,
                   rule: "square",
                   align: "center"
 			}
@@ -646,7 +620,7 @@ var ProductInfo =
 	p10657:
 	{
 		name : "p10657",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -660,10 +634,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.562706,
-				designHeight : 0.798485,
-				designMaxWidth : 0.078548,
-				designMaxHeight : 0.090152,
+                                designCenter : 0.57931,
+                                designHeight : 0.784674,
+                                designMaxWidth : 0.099617,
+                                designMaxHeight : 0.100383,
                   rule: "square",
                   align: "center"
 			}
@@ -672,7 +646,7 @@ var ProductInfo =
 	p10658:
 	{
 		name : "p10658",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -686,10 +660,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.435974,
-				designHeight : 0.776515,
-				designMaxWidth : 0.078548,
-				designMaxHeight : 0.090152,
+                                designCenter : 0.635632,
+                                designHeight : 0.784674,
+                                designMaxWidth : 0.089655,
+                                designMaxHeight : 0.089655,
                   rule: "square",
                   align: "center"
 			}
@@ -698,7 +672,7 @@ var ProductInfo =
 	p10659:
 	{
 		name : "p10659",
-		stores: [""],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -712,10 +686,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.565677,
-				designHeight : 0.827273,
-				designMaxWidth : 0.071287,
-				designMaxHeight : 0.081818,
+                                designCenter : 0.595402,
+                                designHeight : 0.813793,
+                                designMaxWidth : 0.095019,
+                                designMaxHeight : .095785,
                   rule: "square",
                   align: "center"
 			}
@@ -738,10 +712,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.565017,
-				designHeight : 0.793939,
-				designMaxWidth : 0.072607,
-				designMaxHeight : 0.083333,
+                                designCenter : 0.564504,
+                                designHeight : 0.803817,
+                                designMaxWidth : 0.098473,
+                                designMaxHeight : 0.098473,
                   rule: "square",
                   align: "center"
 			}
@@ -776,7 +750,7 @@ var ProductInfo =
 	p10666:
 	{
 		name : "p10666",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -802,7 +776,7 @@ var ProductInfo =
 	p10683:
 	{
 		name : "p10683",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -816,30 +790,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.40396,
-				designHeight : 0.818939,
-				designMaxWidth : 0.063366,
-				designMaxHeight : 0.072727,
-                  rule: "square",
-                  align: "center"
-			},
-            "grey" :
-			{
-				name : "grey",
-				designCenter : 0.369637,
-				designHeight : 0.812121,
-				designMaxWidth : 0.062046,
-				designMaxHeight : 0.071212,
-                  rule: "square",
-                  align: "center"
-			},
-            "royal" :
-			{
-				name : "royal",
-				designCenter : 0.39396,
-				designHeight : 0.818939,
-				designMaxWidth : 0.063366,
-				designMaxHeight : 0.072727,
+                                designCenter : 0.55229,
+                                designHeight : 0.809924,
+                                designMaxWidth : 0.081679,
+                                designMaxHeight : 0.081679,
                   rule: "square",
                   align: "center"
 			}
@@ -848,7 +802,7 @@ var ProductInfo =
 	p11691: //Divot Tool
 	{
 		name : "p11691",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -857,10 +811,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.261056,
-				designHeight : 0.785606,
-				designMaxWidth : 0.145875,
-				designMaxHeight : 0.167424,
+                                designCenter : 0.215472,
+                                designHeight : 0.822642,
+                                designMaxWidth : 0.198491,
+                                designMaxHeight : 0.198497,
                   align : "center",
                   rule: "hypotenuse"
 			}
@@ -883,10 +837,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.556766,
-				designHeight : 0.757576,
-				designMaxWidth : 0.064026,
-				designMaxHeight : 0.073485,
+                                designCenter : 0.587786,
+                                designHeight : 0.79893,
+                                designMaxWidth : 0.077863,
+                                designMaxHeight : 0.077863,
                   rule: "square",
                   align: "center"
 			}
@@ -909,10 +863,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.559406,
-				designHeight : 0.786364,
-				designMaxWidth : 0.062706,
-				designMaxHeight : 0.07197,
+                                designCenter : 0.580916,
+                                designHeight : 0.787023,
+                                designMaxWidth : 0.080916,
+                                designMaxHeight : 0.080916,
                   rule: "square",
                   align: "center"
 			}
@@ -921,7 +875,7 @@ var ProductInfo =
 	p12776:
 	{
 		name : "p12776",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -935,10 +889,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.549505,
-				designHeight : 0.8,
-				designMaxWidth : 0.062706,
-				designMaxHeight : 0.07197,
+                                designCenter : 0.552672,
+                                designHeight : 0.810687,
+                                designMaxWidth : 0.082443,
+                                designMaxHeight : 0.082443,
                   rule: "square",
                   align: "center"
 			}
@@ -947,7 +901,7 @@ var ProductInfo =
 	p12780:
 	{
 		name : "p12780",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -961,10 +915,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.607921,
-				designHeight : 0.846212,
-				designMaxWidth : 0.079208,
-				designMaxHeight : 0.090909,
+                                designCenter : 0.630268,
+                                designHeight : 0.851341,
+                                designMaxWidth : 0.097318,
+                                designMaxHeight : 0.097318,
                   rule: "square",
                   align: "center"
 			}
@@ -973,7 +927,7 @@ var ProductInfo =
 	p12782:
 	{
 		name : "p12782",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -987,40 +941,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.542244,
-				designHeight : 0.805303,
-				designMaxWidth : 0.062706,
-				designMaxHeight : 0.07197,
-                  rule: "square",
-                  align: "center"
-			}	,
-			/*"black" :
-			{
-				name : "black",
-				designCenter : 0.522442,
-				designHeight : 0.770455,
-				designMaxWidth : 0.062706,
-				designMaxHeight : 0.07197,
-                  rule: "square",
-                  align: "center"
-			},*/
-			"purple" :
-			{
-				name : "purple",
-				designCenter : 0.537624,
-				designHeight : 0.744697,
-				designMaxWidth : 0.062706,
-				designMaxHeight : 0.07197,
-                  rule: "square",
-                  align: "center"
-			},
-            "royal" :
-			{
-				name : "royal",
-				designCenter : 0.542244,
-				designHeight : 0.805303,
-				designMaxWidth : 0.062706,
-				designMaxHeight : 0.07197,
+                                designCenter : 0.558015,
+                                designHeight : 0.836641,
+                                designMaxWidth : 0.082443,
+                                designMaxHeight : 0.082443,
                   rule: "square",
                   align: "center"
 			},
@@ -1029,7 +953,7 @@ var ProductInfo =
 	p12786:
 	{
 		name : "p12786",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1040,43 +964,13 @@ var ProductInfo =
 		designs: ["team","mascot"],
 		designLocationInformation:
 		{
-			"grey" :
+			"all" :
 			{
-				name : "grey",
-				designCenter : 0.609901,
-				designHeight : 0.802273,
-				designMaxWidth : 0.069967,
-				designMaxHeight : 0.080303,
-                  rule: "square",
-                  align: "center"
-			},
-			"black" :
-			{
-				name : "black",
-				designCenter : 0.609901,
-				designHeight : .805303,
-				designMaxWidth : 0.069967,
-				designMaxHeight : 0.080303,
-                  rule: "square",
-                  align: "center"
-			},
-			"navy" :
-			{
-				name : "navy",
-				designCenter : 0.593399,
-				designHeight : 0.790152,
-				designMaxWidth : 0.068647,
-				designMaxHeight : 0.078788,
-                  rule: "square",
-                  align: "center"
-			},
-			"white" :
-			{
-				name : "white",
-				designCenter : 0.60132,
-				designHeight : 0.793182,
-				designMaxWidth : 0.068647,
-				designMaxHeight : 0.078788,
+				name : "all",
+                                designCenter : 0.635249,
+                                designHeight : 0.789272,
+                                designMaxWidth : 0.098084,
+                                designMaxHeight : 0.098084,
                   rule: "square",
                   align: "center"
 			}
@@ -1085,7 +979,7 @@ var ProductInfo =
 	p12787:
 	{
 		name : "p12787",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1099,20 +993,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.540554,
-				designHeight : 0.822727,
-				designMaxWidth : 0.067007,
-				designMaxHeight : 0.075758,
-                  rule: "square",
-                  align: "center"
-			},
-            "white" :
-			{
-				name : "white",
-				designCenter : 0.550554, //slightly to the left designCenter : 0.545554,
-				designHeight : 0.816667,
-				designMaxWidth : 0.067007,
-				designMaxHeight : 0.075758,
+                                designCenter : 0.56374,
+                                designHeight : 0.808397,
+                                designMaxWidth : 0.101527,
+                                designMaxHeight : 0.101527,
                   rule: "square",
                   align: "center"
 			}
@@ -1121,7 +1005,7 @@ var ProductInfo =
 	p12788:
 	{
 		name : "p12788",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1135,10 +1019,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.538, //too far to the left designCenter : 0.531,
-				designHeight : 0.820667, //too fhigh designHeight : 0.816667
-				designMaxWidth : 0.066007,
-				designMaxHeight : 0.075758,
+                                designCenter : 0.547328,
+                                designHeight : 0.807634,
+                                designMaxWidth : 0.091603,
+                                designMaxHeight : 0.091603,
                   rule: "square",
                   align: "center"
 			}
@@ -1176,7 +1060,7 @@ var ProductInfo =
 	p12837:
 	{
 		name : "p12837",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1190,10 +1074,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.535974,
-				designHeight : 0.74697,
-				designMaxWidth : 0.063366,
-				designMaxHeight : 0.072727,
+                                designCenter : 0.552453,
+                                designHeight : 0.792453,
+                                designMaxWidth : 0.093585,
+                                designMaxHeight : 0.093585,
                   rule: "square",
                   align: "center"
 			}
@@ -1202,7 +1086,7 @@ var ProductInfo =
 	p12843:
 	{
 		name : "p12843",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1211,10 +1095,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.462376,
-				designHeight : 0.290152,
-				designMaxWidth : 0.070627,
-				designMaxHeight : 0.079545,
+                                designCenter : 0.457854,
+                                designHeight : 0.29272,
+                                designMaxWidth : 0.09272,
+                                designMaxHeight : 0.09272,
                   align: "center",
                   rule : "hypotenuse"
 			}
@@ -1223,7 +1107,7 @@ var ProductInfo =
 	p12907:
 	{
 		name : "p12907",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1232,10 +1116,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.49868,
-				designHeight : 0.275758,
-				designMaxWidth : 0.058746,
-				designMaxHeight : 0.065909,
+                                designCenter : 0.499617,
+                                designHeight : 0.288123,
+                                designMaxWidth : 0.085824,
+                                designMaxHeight : 0.085824,
                   align: "center",
                   rule: "hypotenuse"
 			}
@@ -1244,7 +1128,7 @@ var ProductInfo =
 	p12846:
 	{
 		name : "p12846",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1253,10 +1137,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.462376,
-				designHeight : 0.290152,
-				designMaxWidth : 0.070627,
-				designMaxHeight : 0.079545,
+                                designCenter : 0.459004,
+                                designHeight : 0.289655,
+                                designMaxWidth : 0.082759,
+                                designMaxHeight : 0.081992,
                   align: "center",
                   rule: "hypotenuse"
 			}
@@ -1265,7 +1149,7 @@ var ProductInfo =
 	p12848:
 	{
 		name : "p12848",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1274,10 +1158,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.49868,
-				designHeight : 0.275758,
-				designMaxWidth : 0.058746,
-				designMaxHeight : 0.065909,
+                                designCenter : 0.500766,
+                                designHeight : 0.281226,
+                                designMaxWidth : 0.077395,
+                                designMaxHeight : 0.078161,
                   align: "center",
                   rule: "hypotenuse"
 			}
@@ -1286,7 +1170,7 @@ var ProductInfo =
 	p12851: //Z-Star XV
 	{
 		name : "p12851",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1295,10 +1179,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.589286,
-				designHeight : 0.435331,
-				designMaxWidth : 0.228022,
-				designMaxHeight : 0.26183,
+                                designCenter : 0.659211,
+                                designHeight : 0.476316,
+                                designMaxWidth : 0.289474,
+                                designMaxHeight : 0.289474,
                   align: "center",
                   rule: "hypotenuse"
 			}
@@ -1307,7 +1191,7 @@ var ProductInfo =
 	p12854: //Z-Star
 	{
 		name : "p12854",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1316,10 +1200,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.589286,
-				designHeight : 0.435331,
-				designMaxWidth : 0.228022,
-				designMaxHeight : 0.26183,
+                                designCenter : 0.659211,
+                                designHeight : 0.476316,
+                                designMaxWidth : 0.289474,
+                                designMaxHeight : 0.289474,
                   align: "center",
                   rule: "hypotenuse"
 			}
@@ -1328,7 +1212,7 @@ var ProductInfo =
 	p12855: //Q-Star Tour
 	{
 		name : "p12855",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1337,10 +1221,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.589286,
-				designHeight : 0.435331,
-				designMaxWidth : 0.228022,
-				designMaxHeight : 0.26183,
+                                designCenter : 0.659211,
+                                designHeight : 0.476316,
+                                designMaxWidth : 0.289474,
+                                designMaxHeight : 0.289474,
                   align: "center",
                   rule: "hypotenuse"
 			}
@@ -1349,7 +1233,7 @@ var ProductInfo =
 	p12856: //Soft Feel
 	{
 		name : "p12856",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1358,10 +1242,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.589286,
-				designHeight : 0.435331,
-				designMaxWidth : 0.228022,
-				designMaxHeight : 0.26183,
+                                designCenter : 0.659211,
+                                designHeight : 0.476316,
+                                designMaxWidth : 0.289474,
+                                designMaxHeight : 0.289474,
                   align: "center",
                   rule: "hypotenuse"
 			}
@@ -1370,7 +1254,7 @@ var ProductInfo =
 	p12857: //TP5x
 	{
 		name : "p12857",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1379,10 +1263,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.589286,
-				designHeight : 0.435331,
-				designMaxWidth : 0.228022,
-				designMaxHeight : 0.26183,
+                                designCenter : 0.659211,
+                                designHeight : 0.476316,
+                                designMaxWidth : 0.289474,
+                                designMaxHeight : 0.289474,
                   align: "center",
                   rule: "hypotenuse"
 			}
@@ -1391,7 +1275,7 @@ var ProductInfo =
 	p12858: //TP5
 	{
 		name : "p12858",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1400,10 +1284,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.589286,
-				designHeight : 0.435331,
-				designMaxWidth : 0.228022,
-				designMaxHeight : 0.26183,
+                                designCenter : 0.659211,
+                                designHeight : 0.476316,
+                                designMaxWidth : 0.289474,
+                                designMaxHeight : 0.289474,
                   align: "center",
                   rule: "hypotenuse"
 			}
@@ -1412,7 +1296,7 @@ var ProductInfo =
 	p12866:
 	{
 		name : "p12866",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1426,10 +1310,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.518152,
-				designHeight : 0.831061,
-				designMaxWidth : 0.069967,
-				designMaxHeight : 0.080303,
+                                designCenter : 0.534483,
+                                designHeight : 0.822222,
+                                designMaxWidth : 0.09272,
+                                designMaxHeight : 0.09272,
                   rule: "square",
                   align: "center"
 			}
@@ -1438,10 +1322,10 @@ var ProductInfo =
 	p6215:
 	{
 		name : "p6215",
-		stores: ["team"],
+		stores: [""],
 		process: "ht",
 		allColors: ["royal","black","grey","navy"],
-		designs: ["d8","d9","d11"],
+		designs: ["d9","d11"],
 		designLocationInformation:
 		{
             "all" :
@@ -1466,7 +1350,7 @@ var ProductInfo =
 	p12775:
 	{
 		name : "p12775",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1492,7 +1376,7 @@ var ProductInfo =
 	p12789:
 	{
 		name : "p12789",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1506,10 +1390,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.36475,
-				designHeight : 0.820321,
-				designMaxWidth : 0.0685,
-				designMaxHeight : 0.080367,
+                                designCenter : 0.541221,
+                                designHeight : 0.822901,
+                                designMaxWidth : 0.08855,
+                                designMaxHeight : 0.08855,
                   rule: "square",
                   align: "center"
 			}
@@ -1532,10 +1416,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.437294,
-				designHeight : 0.774242,
-				designMaxWidth : 0.067987,
-				designMaxHeight : 0.076515,
+                                designCenter : 0.597701,
+                                designHeight : 0.822222,
+                                designMaxWidth : 0.082759,
+                                designMaxHeight : 0.081992,
                   rule: "square",
                   align: "center"
 			}
@@ -1547,7 +1431,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "ht",
 		allColors: ["dark green","red","black","grey","white"],
-		designs: ["d8","d9","d11"],
+		designs: ["d9","d11"],
 		designLocationInformation:
 		{
             "all" :
@@ -1572,7 +1456,7 @@ var ProductInfo =
 	p12899:
 	{
 		name : "p12899",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1581,10 +1465,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.538,
-				designHeight : 0.352,
-				designMaxWidth : 0.074,
-				designMaxHeight : 0.074,
+                                designCenter : 0.535323,
+                                designHeight : 0.333333,
+                                designMaxWidth : 0.111443,
+                                designMaxHeight : 0.111443,
                   align: "center"
 			}
 		}
@@ -1592,7 +1476,7 @@ var ProductInfo =
 	p12897:
 	{
 		name : "p12897",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1601,10 +1485,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.538,
-				designHeight : 0.352,
-				designMaxWidth : 0.074,
-				designMaxHeight : 0.074,
+                                designCenter : 0.535323,
+                                designHeight : 0.333333,
+                                designMaxWidth : 0.111443,
+                                designMaxHeight : 0.111443,
                   align: "center",
                   rule: "hypotenuse"
 			}
@@ -1613,7 +1497,7 @@ var ProductInfo =
 	p12898:
 	{
 		name : "p12898",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -1622,10 +1506,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.538,
-				designHeight : 0.352,
-				designMaxWidth : 0.074,
-				designMaxHeight : 0.074,
+                                designCenter : 0.535323,
+                                designHeight : 0.333333,
+                                designMaxWidth : 0.111443,
+                                designMaxHeight : 0.111443,
                   align: "center",
                   rule: "hypotenuse"
 			}
@@ -1655,10 +1539,10 @@ var ProductInfo =
 	p12918:
 	{
 		name : "p12918",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "ht",
 		allColors: ["black"],
-		designs: ["d1","d10"],
+		designs: ["d1","d10"],//,"d20"],
         overrides:
 		{
 			light: ["black"],
@@ -1669,10 +1553,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.5,
-				designHeight : 0.3,
-				designMaxWidth : 0.221122,
-				designMaxHeight : 0.253788,
+                                designCenter : 0.495402,
+                                designHeight : 0.298851,
+                                designMaxWidth : 0.334866,
+                                designMaxHeight : 0.204598,
                   align : "bottom",
                   rule : "height"
 			}
@@ -1681,7 +1565,7 @@ var ProductInfo =
 	p12919:
 	{
 		name : "p12919",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "ht",
 		allColors: ["black","navy","royal","white"],
         overrides:
@@ -1689,7 +1573,7 @@ var ProductInfo =
 			light: ["royal"],
 			dark: [""]
 		},
-		designs: ["d1","d10"],
+		designs: ["d1","d10"],//,"d20"],
 		designLocationInformation:
 		{
 			"all" :
@@ -1705,10 +1589,37 @@ var ProductInfo =
 			}
 		}
 	},
+	p12937:
+	{
+		name : "p12937",
+		stores: ["team"],
+		process: "ht",
+		allColors: ["black","navy","royal","purple","red"],
+        overrides:
+		{
+			light: ["all"],
+			dark: [""]
+		},
+		designs: ["d1"],
+		designLocationInformation:
+		{
+			"all" :
+			{
+				name : "all",
+                                designCenter : 0.268199,
+                                designHeight : 0.804598,
+                                designMaxWidth : 0.392337,
+                                designMaxHeight : 0.388506,
+                  align : "center",
+                  rule : "hypotenuse"//,
+                  //rotate : 49.5
+			}
+		}
+	},
 	p12940:
 	{
 		name : "p12940",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1723,20 +1634,10 @@ var ProductInfo =
             "all" :
 			{
 				name : "all",
-				designCenter : 0.38775,
-				designHeight : 0.7095,
-				designMaxWidth : 0.0825,
-				designMaxHeight : 0.082,
-                  rule: "square",
-                  align: "center"
-			},
-            "grey" :
-			{
-				name : "grey",
-				designCenter : 0.54575,
-				designHeight : 0.807,
-				designMaxWidth : 0.0915,
-				designMaxHeight : 0.092,
+                                designCenter : 0.55458,
+                                designHeight : 0.790076,
+                                designMaxWidth : 0.077099,
+                                designMaxHeight : 0.076336,
                   rule: "square",
                   align: "center"
 			}
@@ -1745,7 +1646,7 @@ var ProductInfo =
 	p12941:
 	{
 		name : "p12941",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1760,10 +1661,10 @@ var ProductInfo =
             "all" :
 			{
 				name : "all",
-				designCenter : 0.384,
-				designHeight : 0.7205,
-				designMaxWidth : 0.076,
-				designMaxHeight : 0.0745,
+                                designCenter : 0.538931,
+                                designHeight : 0.79084,
+                                designMaxWidth : 0.079389,
+                                designMaxHeight : 0.079389,
                   rule: "square",
                   align: "center"
 			}
@@ -1772,7 +1673,7 @@ var ProductInfo =
 	p12942:
 	{
 		name : "p12942",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1787,10 +1688,10 @@ var ProductInfo =
             "all" :
 			{
 				name : "all",
-				designCenter : 0.314521,
-				designHeight : 0.732576,
-				designMaxWidth : 0.067987,
-				designMaxHeight : 0.079545,
+                                designCenter : 0.540076,
+                                designHeight : 0.784733,
+                                designMaxWidth : 0.084733,
+                                designMaxHeight : 0.084733,
                   rule: "square",
                   align: "center"
 			}
@@ -1814,10 +1715,10 @@ var ProductInfo =
             "all" :
 			{
 				name : "all",
-				designCenter : 0.342,
-				designHeight : 0.695,
-				designMaxWidth : 0.068,
-				designMaxHeight : 0.068,
+                                designCenter : 0.529771,
+                                designHeight : 0.816794,
+                                designMaxWidth : 0.080916,
+                                designMaxHeight : 0.080916,
                   rule: "square",
                   align: "center"
 			}
@@ -1841,10 +1742,10 @@ var ProductInfo =
             "all" :
 			{
 				name : "all",
-				designCenter : 0.493056,
-				designHeight : 0.805556,
-				designMaxWidth : 0.071296,
-				designMaxHeight : 0.078296,
+                                designCenter : 0.639171,
+                                designHeight : 0.802765,
+                                designMaxWidth : 0.085714,
+                                designMaxHeight : 0.085714,
                   rule: "square",
                   align: "center"
 			}
@@ -1853,7 +1754,7 @@ var ProductInfo =
 	p12948:
 	{
 		name : "p12948",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1868,10 +1769,10 @@ var ProductInfo =
             "all" :
 			{
 				name : "all",
-				designCenter : 0.360208,
-				designHeight : 0.77125,
-				designMaxWidth : 0.084583,
-				designMaxHeight : 0.085833,
+                                designCenter : 0.528244,
+                                designHeight : 0.819847,
+                                designMaxWidth : 0.085496,
+                                designMaxHeight : 0.085496,
                   rule: "square",
                   align: "center"
 			}
@@ -1880,7 +1781,7 @@ var ProductInfo =
 	p12949:
 	{
 		name : "p12949",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1895,10 +1796,10 @@ var ProductInfo =
             "all" :
 			{
 				name : "all",
-				designCenter : 0.400417,
-				designHeight : 0.6375,
-				designMaxWidth : 0.065833,
-				designMaxHeight : 0.064583,
+                                designCenter : 0.579389,
+                                designHeight : 0.823664,
+                                designMaxWidth : 0.09313,
+                                designMaxHeight : 0.09313,
                   rule: "square",
                   align: "center"
 			}
@@ -1921,10 +1822,10 @@ var ProductInfo =
             "all" :
 			{
 				name : "all",
-				designCenter : 0.432013,
-				designHeight : 0.811364,
-				designMaxWidth : 0.053465,
-				designMaxHeight : 0.053465,
+                                designCenter : 0.632567,
+                                designHeight : 0.82069,
+                                designMaxWidth : 0.083525,
+                                designMaxHeight : 0.083525,
                   rule: "square",
                   align: "center"
 			}
@@ -1933,7 +1834,7 @@ var ProductInfo =
 	p12952:
 	{
 		name : "p12952",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -1947,10 +1848,10 @@ var ProductInfo =
             "all" :
 			{
 				name : "all",
-				designCenter : 0.407292,
-				designHeight : 0.65625,
-				designMaxWidth : 0.062917,
-				designMaxHeight : 0.06375,
+                                designCenter : 0.581298,
+                                designHeight : 0.787023,
+                                designMaxWidth : 0.074046,
+                                designMaxHeight : 0.074046,
                   rule: "square",
                   align: "center"
 			}
@@ -1973,10 +1874,10 @@ var ProductInfo =
             "all" :
 			{
 				name : "all",
-				designCenter : 0.371617,
-				designHeight : 0.591667,
-				designMaxWidth : 0.052805,
-				designMaxHeight : 0.060606,
+                                designCenter : 0.571374,
+                                designHeight : 0.80229,
+                                designMaxWidth : 0.074046,
+                                designMaxHeight : 0.074046,
                   rule: "square",
                   align: "center"
 			}
@@ -2000,10 +1901,10 @@ var ProductInfo =
             "all" :
 			{
 				name : "all",
-				designCenter : 0.392917,
-				designHeight : 0.74125,
-				designMaxWidth : 0.075,
-				designMaxHeight : 0.07375,
+                                designCenter : 0.557471,
+                                designHeight : 0.800766,
+                                designMaxWidth : 0.068199,
+                                designMaxHeight : 0.068199,
                   rule: "square",
                   align: "center"
 			}
@@ -2163,7 +2064,7 @@ var ProductInfo =
 	p5114 :
 	{
 		name : "p5114",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2177,10 +2078,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.561386,
-				designHeight : 0.778788,
-				designMaxWidth : 0.057426,
-				designMaxHeight : 0.065909,
+                                designCenter : 0.5659,
+                                designHeight : 0.812261,
+                                designMaxWidth : 0.072797,
+                                designMaxHeight : 0.072797,
                   rule: "square",
                   align: "center"
 			}
@@ -2189,7 +2090,7 @@ var ProductInfo =
 	p5125: //adidas unstructured cap 2
 	{
 		name : "p5125",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2216,7 +2117,7 @@ var ProductInfo =
 	p5128: //adidas structured cap 2
 	{
 		name : "p5128",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2243,7 +2144,7 @@ var ProductInfo =
 	p5131:
 	{
 		name : "p5131",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2269,19 +2170,19 @@ var ProductInfo =
 	p5546:
 	{
 		name : "p5546",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "sub",
 		allColors: ["white"],
-		designs: ["d1","d2","d5"],
+		designs: ["d1","d2","d5"],//,"d20"],
 		designLocationInformation:
 		{
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.528053,
-				designHeight : 0.529545,
-				designMaxWidth : 0.5212,
-				designMaxHeight : 0.397727,
+                                designCenter : 0.59073,
+                                designHeight : 0.52597,
+                                designMaxWidth : 0.64497,
+                                designMaxHeight : 0.416174,
                   align: "center"
 			}
 		}
@@ -2289,10 +2190,10 @@ var ProductInfo =
 	p5701: //Short Sleeve Logo Tee
 	{
 		name : "p5701",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "dtg",
 		allColors: ["red","maroon","athletic gold","dark green","royal","navy","purple","black","grey","white","orange"],
-		designs: ["d1","d2","d3"],
+		designs: ["d1","d2","d3"],//,"d19"],
 		designLocationInformation:
 		{
 			"all" :
@@ -2308,7 +2209,7 @@ var ProductInfo =
 	p5764:
 	{
 		name : "p5764",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2335,7 +2236,7 @@ var ProductInfo =
 	p5972:
 	{
 		name : "p5972",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2396,7 +2297,7 @@ var ProductInfo =
 	p6019 : //climalite Fielder's Choice Convertible Jacket
 	{
 		name : "p6019",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2410,20 +2311,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.341914,
-				designHeight : 0.784091,
-				designMaxWidth : 0.069967,
-				designMaxHeight : 0.080303,
-                  rule: "square",
-                  align: "center"
-			},
-			"dark green" :
-			{
-				name : "dark green",
-				designCenter : 0.2,
-				designHeight : 0.2,
-				designMaxWidth : 0.2,
-				designMaxHeight : 0.2,
+                                designCenter : 0.543295,
+                                designHeight : 0.801533,
+                                designMaxWidth : 0.076628,
+                                designMaxHeight : 0.076628,
                   rule: "square",
                   align: "center"
 			}
@@ -2432,7 +2323,7 @@ var ProductInfo =
 	p6143 :
 	{
 		name : "p6143",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2446,20 +2337,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.442574,
-				designHeight : 0.812303,
-				designMaxWidth : 0.067987,
-				designMaxHeight : 0.07803,
-                  rule: "square",
-                  align: "center"
-			},
-             "grey" :
-			{
-				name : "grey",
-				designCenter : 0.443234,
-				designHeight : 0.812818,
-				designMaxWidth : 0.069307,
-				designMaxHeight : 0.079545,
+                                designCenter : 0.625287,
+                                designHeight : 0.802299,
+                                designMaxWidth : 0.079693,
+                                designMaxHeight : 0.079693,
                   rule: "square",
                   align: "center"
 			}
@@ -2468,7 +2349,7 @@ var ProductInfo =
 	p6145 : //Club Short Sleeve Wind Jacket
 	{
 		name : "p6145",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2482,20 +2363,10 @@ var ProductInfo =
             "all" :
 			{
 				name : "all",
-				designCenter : 0.472937,
-				designHeight : 0.812727,
-				designMaxWidth : 0.073548,
-				designMaxHeight : 0.085152,
-                  rule: "square",
-                  align: "center"
-             },
-             "white" :
-			{
-				name : "all",
-				designCenter : 0.452937,
-				designHeight : 0.812727,
-				designMaxWidth : 0.073548,
-				designMaxHeight : 0.085152,
+                                designCenter : 0.626054,
+                                designHeight : 0.813027,
+                                designMaxWidth : 0.084291,
+                                designMaxHeight : 0.084291,
                   rule: "square",
                   align: "center"
              }
@@ -2530,7 +2401,7 @@ var ProductInfo =
 	p6361 : //Club Wind Vest
 	{
 		name : "p6361",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2541,33 +2412,13 @@ var ProductInfo =
 		designs : ["team","mascot"],
 		designLocationInformation :
         {
-             "navy" :
+             "all" :
 			{
-				name : "navy",
-				designCenter : 0.430693,
-				designHeight : 0.810606,
-				designMaxWidth : 0.074587,
-				designMaxHeight : 0.085606,
-                  rule: "square",
-                  align: "center"
-			},
-			"grey" :
-			{
-				name : "grey",
-				designCenter : 0.458086,
-				designHeight : 0.819697,
-				designMaxWidth : 0.076568,
-				designMaxHeight : 0.087879,
-                  rule: "square",
-                  align: "center"
-			},
-			"red" :
-			{
-				name : "red",
-				designCenter : 0.443894,
-				designHeight : 0.813636,
-				designMaxWidth : 0.074587,
-				designMaxHeight : 0.085606,
+				name : "all",
+                                designCenter : 0.627099,
+                                designHeight : 0.81145,
+                                designMaxWidth : 0.08626,
+                                designMaxHeight : 0.08626,
                   rule: "square"
 			}
 		}
@@ -2662,7 +2513,7 @@ var ProductInfo =
 	p6412 :
 	{
 		name : "p6412",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2676,10 +2527,10 @@ var ProductInfo =
             "all" :
 			{
 				name : "all",
-				designCenter : 0.60231,
-				designHeight : 0.796212,
-				designMaxWidth : 0.071947,
-				designMaxHeight : 0.082576,
+                                designCenter : 0.635632,
+                                designHeight : 0.793103,
+                                designMaxWidth : 0.08659,
+                                designMaxHeight : 0.08659,
                   rule: "square",
                   align: "center"
              }
@@ -2688,7 +2539,7 @@ var ProductInfo =
 	p6415 :
 	{
 		name : "p6415",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2702,50 +2553,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.437294,
-				designHeight : 0.813636,
-				designMaxWidth : 0.074587,
-				designMaxHeight : 0.085606,
-                  rule: "square",
-                  align: "center"
-			},
-			"black" :
-			{
-				name : "all",
-				designCenter : 0.440264,
-				designHeight : 0.806818,
-				designMaxWidth : 0.071287,
-				designMaxHeight : 0.081818,
-                  rule: "square",
-                  align: "center"
-			},
-			"navy" :
-			{
-				name : "navy",
-				designCenter : 0.445545,
-				designHeight : 0.809484,
-				designMaxWidth : 0.071287,
-				designMaxHeight : 0.081818,
-                  rule: "square",
-                  align: "center"
-			},
-			"dark green" :
-			{
-				name : "dark green",
-				designCenter : 0.440264,
-				designHeight : 0.806818,
-				designMaxWidth : 0.071287,
-				designMaxHeight : 0.081818,
-                  rule: "square",
-                  align: "center"
-			},
-			"red" :
-			{
-				name : "red",
-				designCenter : 0.450825,
-				designHeight : 0.812879,
-				designMaxWidth : 0.071287,
-				designMaxHeight : 0.081818,
+                                designCenter : 0.623282,
+                                designHeight : 0.805344,
+                                designMaxWidth : 0.081679,
+                                designMaxHeight : 0.081679,
                   rule: "square",
                   align: "center"
 			}
@@ -2783,7 +2594,7 @@ var ProductInfo =
 		stores: ["emb"],
 		process: "ht",
 		allColors: ["black"],
-		designs: ["d1","d10"],
+		designs: ["d1","d10"],//,"d20"],
 		designLocationInformation:
 		{
 			"all" :
@@ -2804,7 +2615,7 @@ var ProductInfo =
 		stores: ["emb"],
 		process: "ht",
 		allColors: ["black","navy","royal"],
-		designs: ["d1","d10"],
+		designs: ["d1","d10"],//,"d20"],
 		designLocationInformation:
 		{
 			"all" :
@@ -2825,7 +2636,7 @@ var ProductInfo =
 		stores: ["emb"],
 		process: "ht",
 		allColors: ["black"],
-		designs: ["d1","d10"],
+		designs: ["d1","d10"],//,"d20"],
 		designLocationInformation:
 		{
 			"all" :
@@ -2869,7 +2680,7 @@ var ProductInfo =
 	p6490 :
 	{
 		name : "p6490",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2883,10 +2694,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.311551,
-				designHeight : 0.816667,
-				designMaxWidth : 0.067327,
-				designMaxHeight : 0.077273,
+                                designCenter : 0.498092,
+                                designHeight : 0.807634,
+                                designMaxWidth : 0.081679,
+                                designMaxHeight : 0.081679,
                   rule: "square",
                   align: "center"
                }
@@ -2895,7 +2706,7 @@ var ProductInfo =
 	p6491 :
 	{
 		name : "p6491",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2909,10 +2720,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.307261,
-				designHeight : 0.784091,
-				designMaxWidth : 0.065327,
-				designMaxHeight : 0.075273,
+                                designCenter : 0.490805,
+                                designHeight : 0.797701,
+                                designMaxWidth : 0.081992,
+                                designMaxHeight : 0.081992,
                   rule: "square",
                   align: "center"
                }
@@ -2921,7 +2732,7 @@ var ProductInfo =
 	p6492 :
 	{
 		name : "p6492",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2935,10 +2746,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.307261,
-				designHeight : 0.784091,
-				designMaxWidth : 0.057106,
-				designMaxHeight : 0.080303,
+                                designCenter : 0.490805,
+                                designHeight : 0.797701,
+                                designMaxWidth : 0.081992,
+                                designMaxHeight : 0.081992,
                   rule: "square",
                   align: "center"
                }
@@ -2947,7 +2758,7 @@ var ProductInfo =
 	p6499 :
 	{
 		name : "p6499",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -2961,10 +2772,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.3655, //too far to the left designCenter : 0.355116,
-				designHeight : 0.742, //too high designHeight : 0.75303,
-				designMaxWidth : 0.071287,
-				designMaxHeight : 0.081818,
+                                designCenter : 0.573664,
+                                designHeight : 0.750382,
+                                designMaxWidth : 0.081679,
+                                designMaxHeight : 0.081679,
                   rule: "square",
                   align: "center"
 			}
@@ -2999,10 +2810,10 @@ var ProductInfo =
 	p6518:
 	{
 		name : "p6518",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "dtg",
 		allColors: ["red","royal","navy","black","grey","charcoal"],
-		designs: ["d1","d2","d3"],
+		designs: ["d1","d2","d3"],//,"d19"],
 		designLocationInformation:
 		{
 			"all" :
@@ -3021,7 +2832,7 @@ var ProductInfo =
 		stores: [""],
 		process: "ht",
 		allColors: ["navy","royal"],
-		designs: ["d1","d10"],
+		designs: ["d1","d10"],//,"d20"],
         overrides:
 		{
 			light: ["navy","royal"],
@@ -3057,10 +2868,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.305611,
-				designHeight : 0.821212,
-				designMaxWidth : 0.069967,
-				designMaxHeight : 0.078788,
+                                designCenter : 0.506897,
+                                designHeight : 0.806897,
+                                designMaxWidth : 0.081992,
+                                designMaxHeight : 0.081992,
                   rule: "square",
                   align: "center"
 			}
@@ -3122,7 +2933,7 @@ var ProductInfo =
 	p6561: //Carbon Fiber Hat
 	{
 		name : "p6561",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -3148,7 +2959,7 @@ var ProductInfo =
 	p6566 :
 	{
 		name : "p6566",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -3174,7 +2985,7 @@ var ProductInfo =
 	p6571 :
 	{
 		name : "p6571",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -3194,23 +3005,13 @@ var ProductInfo =
 				designMaxHeight : 0.081818,
                   rule: "square",
                   align: "center"
-			},
-              "grey" :
-              {
-				name : "all",
-				designCenter : 0.591749,
-				designHeight : 0.75303,
-				designMaxWidth : 0.071287,
-				designMaxHeight : 0.081818,
-                  rule: "square",
-                  align: "center"
-              }
+			}
 		}
 	},
 	p6576 :
 	{
 		name : "p6576",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -3236,7 +3037,7 @@ var ProductInfo =
 	p6580 :
 	{
 		name : "p6580",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -3262,7 +3063,7 @@ var ProductInfo =
 	p6581 :
 	{
 		name : "p6581",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -3288,7 +3089,7 @@ var ProductInfo =
 	p7595:
 	{
 		name : "p7595",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "emb",
 		overrides:
 		{
@@ -3314,7 +3115,7 @@ var ProductInfo =
 	p12909:
 	{
 		name : "p12909",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -3323,10 +3124,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.463696,
-				designHeight : 0.3,
-				designMaxWidth : 0.090429,
-				designMaxHeight : 0.103788,
+                                designCenter : 0.460153,
+                                designHeight : 0.28057,
+                                designMaxWidth : 0.081992,
+                                designMaxHeight : 0.081992,
                   align: "center",
                   rule: "hypotenuse"
 			}
@@ -3335,7 +3136,7 @@ var ProductInfo =
 	p7608: //project(s)
 	{
 		name : "p7608",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -3344,10 +3145,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.589286,
-				designHeight : 0.435331,
-				designMaxWidth : 0.228022,
-				designMaxHeight : 0.26183,
+                                designCenter : 0.659211,
+                                designHeight : 0.476316,
+                                designMaxWidth : 0.289474,
+                                designMaxHeight : 0.289474,
                   align: "center",
                   rule: "hypotenuse"
 			}
@@ -3356,7 +3157,7 @@ var ProductInfo =
 	p8612: //project(a)
 	{
 		name : "p8612",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -3365,10 +3166,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.589286,
-				designHeight : 0.435331,
-				designMaxWidth : 0.228022,
-				designMaxHeight : 0.26183,
+                                designCenter : 0.635197,
+                                designHeight : 0.478947,
+                                designMaxWidth : 0.309868,
+                                designMaxHeight : 0.309868,
                   align: "center",
                   rule: "hypotenuse"
 			}
@@ -3391,10 +3192,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.558416,
-				designHeight : 0.8,
-				designMaxWidth : 0.071287,
-				designMaxHeight : 0.081818,
+                                designCenter : 0.5659,
+                                designHeight : 0.805364,
+                                designMaxWidth : 0.085057,
+                                designMaxHeight : 0.085057,
                   rule: "square",
                   align: "center"
 			}
@@ -3457,10 +3258,10 @@ var ProductInfo =
 			"all" :
 			{
 				name : "all",
-				designCenter : 0.411881,
-				designHeight : 0.818939,
-				designMaxWidth : 0.066007,
-				designMaxHeight : 0.075758,
+                                designCenter : 0.537023,
+                                designHeight : 0.814504,
+                                designMaxWidth : 0.081679,
+                                designMaxHeight : 0.081679,
                   rule: "square",
                   align: "center"
              }
@@ -3469,7 +3270,7 @@ var ProductInfo =
 	p12937: //Club Cover
 	{
 		name : "p12937",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "ht",
 		overrides:
 		{
@@ -3495,7 +3296,7 @@ var ProductInfo =
 	p12994: //PitchFix Fusion
 	{
 		name : "p12994",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -3504,20 +3305,20 @@ var ProductInfo =
             "all" :
             {
                   name : "multiLocations-first",
-				designCenter : 0.330363,
-				designHeight : 0.239394,
-				designMaxWidth : 0.153795,
-				designMaxHeight : 0.176515,
+				designCenter : 0.306513,
+				designHeight : 0.242912,
+				designMaxWidth : 0.182375,
+				designMaxHeight : 0.182375,
                   align : "center",
                   rule: "hypotenuse"
             },
             "secondLocation" :
             {
                   name : "multiLocations-second",
-				designCenter : 0.670297,
-				designHeight : 0.240152,
-				designMaxWidth : 0.153795,
-				designMaxHeight : 0.176515,
+				designCenter : 0.695785,
+				designHeight : 0.243678,
+				designMaxWidth : 0.182375,
+				designMaxHeight : 0.182375,
                   align : "center",
                   rule: "hypotenuse"
             }
@@ -3526,7 +3327,7 @@ var ProductInfo =
 	p12993: //PitchFix Hybrid
 	{
 		name : "p12993",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -3535,20 +3336,20 @@ var ProductInfo =
             "all" :
             {
                   name : "multiLocations-first",
-				designCenter : 0.340594,
-				designHeight : 0.224242,
-				designMaxWidth : 0.146535,
-				designMaxHeight : 0.168182,
+				designCenter : 0.317241,
+				designHeight : 0.249212,
+				designMaxWidth : 0.182375,
+				designMaxHeight : 0.182375,
                   align : "center",
                   rule: "hypotenuse"
             },
             "secondLocation" :
             {
                   name : "multiLocations-second",
-				designCenter : 0.662046,
-				designHeight : 0.225758,
-				designMaxWidth : 0.146535,
-				designMaxHeight : 0.168182,
+				designCenter : 0.685824,
+				designHeight : 0.228352,
+				designMaxWidth : 0.171648,
+				designMaxHeight : 0.171648,
                   align : "center",
                   rule: "hypotenuse"
             }
@@ -3557,7 +3358,7 @@ var ProductInfo =
 	p12996: //PitchFix Original
 	{
 		name : "p12996",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -3566,20 +3367,20 @@ var ProductInfo =
             "all" :
             {
                   name : "multiLocations-first",
-				designCenter : 0.342574,
-				designHeight : 0.22803,
-				designMaxWidth : 0.146535,
-				designMaxHeight : 0.168182,
+				designCenter : 0.320307,
+				designHeight : 0.231418,
+				designMaxWidth : 0.17318,
+				designMaxHeight : 0.17318,
                   align : "center",
                   rule: "hypotenuse"
             },
             "secondLocation" :
             {
                   name : "multiLocations-second",
-				designCenter : 0.660066,
-				designHeight : 0.229545,
-				designMaxWidth : 0.146535,
-				designMaxHeight : 0.168182,
+				designCenter : 0.685057,
+				designHeight : 0.232184,
+				designMaxWidth : 0.17318,
+				designMaxHeight : 0.17318,
                   align : "center",
                   rule: "hypotenuse"
             }
@@ -3588,7 +3389,7 @@ var ProductInfo =
 	p12997: //PitchFix Multimarker
 	{
 		name : "p12997",
-		stores: ["BLARG"],
+		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
 		designs: ["d1","d6","d7"],
@@ -3597,10 +3398,10 @@ var ProductInfo =
             "all" :
             {
                   name : "all",
-				designCenter : 0.244224,
-				designHeight : 0.620455,
-				designMaxWidth : 0.207261,
-				designMaxHeight : 0.237879,
+                                designCenter : 0.245211,
+                                designHeight : 0.60613,
+                                designMaxWidth : 0.209962,
+                                designMaxHeight : 0.209965,
                   align : "center",
                   rule: "hypotenuse"
             }
