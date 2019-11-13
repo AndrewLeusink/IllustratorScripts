@@ -291,15 +291,10 @@ function DesignActions(doc, design)
 
                 }
             
-            var action = new File (['/p/JordanRunstein/illustratorActions/alignStrokeOutside.aia']);
+            var action = new File (['/p/JordanRunstein/illustratorActions/duplicateWithStroke.aia']);
             app.loadAction(action);
-            app.doScript("alignStroke","alignStrokeOutside");
-            app.unloadAction("alignStrokeOutside","");
-            
-            var action = new File (['/p/JordanRunstein/illustratorActions/alignStrokeInside.aia']);
-            app.loadAction(action);
-            app.doScript("asi","alignStrokeInside");
-            app.unloadAction("alignStrokeInside","");
+            app.doScript("DWS","duplicateWithStroke");
+            app.unloadAction("duplicateWithStroke", "");
             
             
             
@@ -2351,13 +2346,24 @@ function DesignActions(doc, design)
                 scaleMatrix = app.getScaleMatrix(200,150);
                 bigletter.transform(scaleMatrix,true,false,false,false, 0, Transformation.CENTER);
                 
+                midpoint2 = bigletter.position[0]+bigletter.width/2-textLine2.width/2;
+                mid1 = bigletter.position[0] + bigletter.width/2-textLine1.width/2;
+               // textLine2.translate(midpoint2-textLine2.position[0],0);
+                //textLine1.translate(mid1-textLine1.position[0],0);
+                
                 
                             var action = new File (['/p/JordanRunstein/illustratorActions/duplicateWithStroke.aia']);
             app.loadAction(action);
             app.doScript("DWS","duplicateWithStroke");
             app.unloadAction("duplicateWithStroke", "");
+            
+            if(textLine2.width>textLine1.width){
 
                 resizeArtboard(doc, textLine2,blockletter,textLine2,blockletter);
+                }
+            else{
+                resizeArtboard (doc, textLine1, blockletter, textLine1, blockletter)
+                }
 
 
                 }
@@ -2392,26 +2398,81 @@ function DesignActions(doc, design)
                 //$.writeln(targetx);
                 textLine2.translate(targetx2-textLine2.position[0],0);
                 textLine1.translate(targetx1-textLine1.position[0],0);
+
+                getItemByName("text");
+                text = app.selection[0];
+                $.writeln(text.textFrames.length);
+                len = text.textFrames.length
+                end = false;
+                begin = false;
+                for(t21i = 0; t21i<len; t21i++){
+                $.writeln("text frame " + t21i + " : " +text.textFrames[t21i].contents);
+                if(t21i<len-2){
+                    if(text.textFrames[t21i+2].contents == " " && text.textFrames[t21i].contents == " " && text.textFrames[t21i+1].contents != " " ){
+                        endIndex = t21i+1;
+                        $.writeln("begin: " + t21i);
+                        end = true;
+
+                        }
+
+                        }
+               if(t21i>1){
+                    if(text.textFrames[t21i-2].contents == " " && text.textFrames[t21i].contents == " " && text.textFrames[t21i-1].contents != " "){
+                        beginIndex = t21i-1;
+                        $.writeln("end: " + t21i);
+                        begin = true;
+
+                        }
+                    }
+                }
                 
-                if (textLine1.width > middleDesign.width){
-                    ableft = textLine1.controlBounds[0] - 5;
-                    abright = textLine1.controlBounds[2] + 5;
-                    abtop = textLine1.controlBounds[1] -225;
-                    abbottom = textLine1.controlBounds[3] - 5;
+                if(begin == false){
+                    beginIndex = len-1;
+                    if(text.textFrames[beginIndex].contents ==" "){
+                        
+                        beginIndex = len-2;
+
+                        }
+                    $.writeln("begin letter: " + text.textFrames[beginIndex].contents);
+                    }
+
+                if(end == false){
+                    endIndex = 0;
+                    if(text.textFrames[endIndex].contents == " "){
+                        endIndex = 1;
+                        }
+
+                    $.writeln("end letter: " + text.textFrames[endIndex].contents);
+                    }
+                
+                beginText = text.textFrames[beginIndex].createOutline();
+                endText = text.textFrames[endIndex].createOutline();
+                $.writeln("beginText: " + beginText.controlBounds[2]);
+                $.writeln("endText: " + endText.controlBounds[0]);
+                textWidth = (endText.controlBounds[2]) - (beginText.controlBounds[0]);
+                $.writeln("textwidth: " + textWidth);
+                $.writeln("middle design width: " + middleDesign.width);                
+
+                
+                if (textWidth > middleDesign.width){
+                    ableft = beginText.controlBounds[0] - 15;
+                    abtop = textLine1.controlBounds[1] -300;                   
+                    abright = endText.controlBounds[2] + 15;
+                    abbottom = textLine1.controlBounds[3] + 5;
                     }
                 else{
-                    ableft = middleDesign.controlBounds[0]-5;
-                    abtop = textLine1.controlBounds[1]-225;
-                    abright = middleDesign.controlBounds[2]+5;
-                    abbottom = textLine2.controlBounds[3]-5;
+                    ableft = middleDesign.controlBounds[0];
+                    abtop = textLine1.controlBounds[1] - 300;
+                    abright = middleDesign.controlBounds[2];
+                    abbottom = textLine2.controlBounds[3] + 5;
                     }
                 
-                
+
 
 
                 newAB.artboardRect = [ableft, abtop, abright, abbottom];
 //                resizeArtboard(doc, bigGroup, bigGroup, bigGroup, bigGroup);
-
+  
 
                 }
             
@@ -2435,44 +2496,57 @@ function DesignActions(doc, design)
             
             getItemByName("mascotImage");
             mascotImage = app.selection[0];
-            scaleMatrix = app.getScaleMatrix(100/mascotImage.width*100,100*100/mascotImage.height);
+            scaleMatrix = app.getScaleMatrix(200/mascotImage.width*100,100*200/mascotImage.height);
             mascotImage.transform(scaleMatrix);
+            doc.selection = null;
             
             targetx = textLine1.position[0] + textLine1.width/2 - mascotImage.width/2;
-            targety = textLine1.position[1] - mascotImage.height/4;
+            getItemByName("actualText");
+            actualText = app.selection[0];
+            if(actualText.length > 6){
+                targety = textLine1.position[1] - mascotImage.height/5;
+                }
+            else{
+                targety = textLine1.position[1] - mascotImage.height/3;
+                }
             transMatrix = app.getTranslationMatrix(targetx-mascotImage.position[0], targety-mascotImage.position[1]);
             mascotImage.transform(transMatrix);
+            doc.selection = null;
                 
-                
-                              var action = new File (['/p/JordanRunstein/illustratorActions/duplicateWithStroke.aia']);
+            
+            getItemByName("text");
+            text = app.selection[0];
+            doc.selection  = null;
+            
+            
+             scaleMatrix2 = app.getScaleMatrix(135,150);
+             
+             text.transform(scaleMatrix2);
+             //stroke.transform(scaleMatrix2);
+           
+            
+        
+            var action = new File (['/p/JordanRunstein/illustratorActions/duplicateWithStroke.aia']);
             app.loadAction(action);
             app.doScript("DWS","duplicateWithStroke");
             app.unloadAction("duplicateWithStroke", "");     
-                /*
-            text = textLine1.textFrames[0].createOutline();
-            //text = textLine1.textFrames;
-            $.writeln(textLine1);
-            $.writeln(text.contents);
-            text1 = text[0].createOutline();
-            text2 = text[1].createOutline();
-            
-            scaleMatrix2 = app.getScaleMatrix(100,125);
-            text.transform(scaleMatrix2);
-            */
         
                         var activeABindex = doc.artboards.getActiveArtboardIndex();  
                 var newAB = doc.artboards[activeABindex];
 
                 var iartBounds = doc.visibleBounds;  
+                
+                $.writeln(textLine1.width);
 
-                var ableft = textLine1.controlBounds[0]*.8;  
-                var abtop =textLine1.controlBounds[1]*1.15;  
-                var abright = textLine1.controlBounds[2]*.8; // + right.width;  
+                var ableft = actualText.controlBounds[0]*1.01;  
+                var abtop =actualText.controlBounds[1]*.98;  
+                var abright = actualText.controlBounds[2]*.9; // + right.width;  
                 var abbottom = mascotImage.controlBounds[3];// - bottom.height;  
 
 
 
                 newAB.artboardRect = [ableft, abtop, abright, abbottom];
+
 
                 }
             
@@ -2491,7 +2565,7 @@ function DesignActions(doc, design)
                 var abbottom = bigGroup.controlBounds[3];// - bottom.height;  
 
                 newAB.artboardRect = [ableft, abtop, abright, abbottom];
-
+//error();
                 
 //                resizeArtboard(doc,bigGroup,bigGroup,bigGroup,bigGroup);
 

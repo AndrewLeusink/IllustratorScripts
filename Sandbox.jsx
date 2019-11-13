@@ -313,9 +313,12 @@ function StoreSchoolData(dataString){
                     case "d10":
                     case "d11":
                     case "d15":
+                    case "d17":
                     case "d18":
                     case "d19":
                     case "d20":
+                    case "d21":
+                    case "d22":
                     case "d24":
                         fileName = folderPath + type[1] + "_" + currentCMH + "_" + ColorAdjust("design",stitchColor,"") + ".png";
                         return fileName;
