@@ -1542,7 +1542,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "ht",
 		allColors: ["black"],
-		designs: ["d1","d10"],//,"d20"],
+		designs: ["d1","d10","d20"],//,"d20"],
         overrides:
 		{
 			light: ["black"],
@@ -1573,7 +1573,7 @@ var ProductInfo =
 			light: ["royal"],
 			dark: [""]
 		},
-		designs: ["d1","d10"],//,"d20"],
+		designs: ["d1","d10","d20"],//,"d20"],
 		designLocationInformation:
 		{
 			"all" :
