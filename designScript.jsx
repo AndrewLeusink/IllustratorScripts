@@ -2179,7 +2179,7 @@ function DesignActions(doc, design)
             doc.selection = null;
             if(text1.compoundPathItems.length > 3){
                 
-                scaleMatrix = app.getScaleMatrix(350/text1.width*100,100);
+                scaleMatrix = app.getScaleMatrix(365/text1.width*100,100);
                 text1.transform(scaleMatrix);
                 }
 
@@ -2419,45 +2419,23 @@ function DesignActions(doc, design)
                 len = text.textFrames.length
                 end = false;
                 begin = false;
+                
                 for(t21i = 0; t21i<len; t21i++){
                 $.writeln("text frame " + t21i + " : " +text.textFrames[t21i].contents);
-                if(t21i<len-2){
-                    if(text.textFrames[t21i+2].contents == " " && text.textFrames[t21i].contents == " " && text.textFrames[t21i+1].contents != " " ){
-                        endIndex = t21i+1;
-                        $.writeln("begin: " + t21i);
-                        end = true;
-
-                        }
-
-                        }
-               if(t21i>1){
-                    if(text.textFrames[t21i-2].contents == " " && text.textFrames[t21i].contents == " " && text.textFrames[t21i-1].contents != " "){
-                        beginIndex = t21i-1;
-                        $.writeln("end: " + t21i);
-                        begin = true;
-
+                    if(text.textFrames[t21i].contents.match(/\S/g)){
+                        endIndex = t21i;
+                        break
                         }
                     }
-                }
-                
-                if(begin == false){
-                    beginIndex = len-1;
-                    if(text.textFrames[beginIndex].contents ==" "){
-                        
-                        beginIndex = len-2;
-
+                for (t21i = len-1; t21i>=0; t21i--){
+                                    $.writeln("text frame " + t21i + " : " +text.textFrames[t21i].contents);
+                    if(text.textFrames[t21i].contents.match(/\S/g)){
+                        beginIndex = t21i;
+                        break
                         }
-                    $.writeln("begin letter: " + text.textFrames[beginIndex].contents);
                     }
 
-                if(end == false){
-                    endIndex = 0;
-                    if(text.textFrames[endIndex].contents == " "){
-                        endIndex = 1;
-                        }
 
-                    $.writeln("end letter: " + text.textFrames[endIndex].contents);
-                    }
                 
                 beginText = text.textFrames[beginIndex].createOutline();
                 endText = text.textFrames[endIndex].createOutline();
@@ -2470,13 +2448,13 @@ function DesignActions(doc, design)
                 
                 if (textWidth > middleDesign.width){
                     ableft = beginText.controlBounds[0] - 15;
-                    abtop = textLine1.controlBounds[1] -300;                   
-                    abright = endText.controlBounds[2] + 15;
+                    abtop = textLine1.controlBounds[1] -260;                   
+                    abright = endText.controlBounds[2] + 18;
                     abbottom = textLine1.controlBounds[3] + 5;
                     }
                 else{
                     ableft = middleDesign.controlBounds[0];
-                    abtop = textLine1.controlBounds[1] - 300;
+                    abtop = textLine1.controlBounds[1] - 260;
                     abright = middleDesign.controlBounds[2];
                     abbottom = textLine2.controlBounds[3] + 5;
                     }
@@ -2486,7 +2464,7 @@ function DesignActions(doc, design)
 
                 newAB.artboardRect = [ableft, abtop, abright, abbottom];
 //                resizeArtboard(doc, bigGroup, bigGroup, bigGroup, bigGroup);
-  
+  //error();
 
                 }
             
@@ -2632,23 +2610,26 @@ function DesignActions(doc, design)
                         }
                     }
                 
+                             var action = new File (['/p/JordanRunstein/illustratorActions/textAreaAdjust.aia']);
+            app.loadAction(action);
+            app.doScript("TAA","textAreaAdjust");
+            app.unloadAction("textAreaAdjust","");
+                
                 //charstyle = doc.characterStyles.add("desiredText");
                 //charstyle = textLine1.textFrames[0].characterStyles;
                 
                 //charstyle.applyTo(newareatext.characters);
                 
                 posx = textLine1.position[0];
+                
                 if(len == 4){
                     
-                    scaleMatrix2 = app.getScaleMatrix(120,100);
+                    scaleMatrix2 = app.getScaleMatrix(215/textLine1.width*100,100);
                     }
                 else{
                     
-             var action = new File (['/p/JordanRunstein/illustratorActions/textAreaAdjust.aia']);
-            app.loadAction(action);
-            app.doScript("TAA","textAreaAdjust");
-            app.unloadAction("textAreaAdjust","");
-            scaleMatrix2 = app.getScaleMatrix(100,100);
+
+            scaleMatrix2 = app.getScaleMatrix(215/textLine1.width*100,100);
 
                     }
                     
@@ -2665,7 +2646,7 @@ function DesignActions(doc, design)
                 resizeArtboard(doc,bigGroup,bigGroup,bigGroup,bigGroup);
                 }
             
-    
+    //error();
 }
 
 
