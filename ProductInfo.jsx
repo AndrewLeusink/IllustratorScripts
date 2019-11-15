@@ -164,7 +164,7 @@ var ProductInfo =
              light : [""],
              dark : [""]
          },
-         designs : ["d9"],
+         designs : ["d9","d11","d15","d22"],
 		designLocationInformation :
 		{
             "all" :
@@ -805,7 +805,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
-		designs: ["d1","d6","d7"],
+		designs: ["d1","d6","d7","d22"],
 		designLocationInformation:
 		{
 			"all" :
@@ -1089,7 +1089,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
-		designs: ["d1","d6","d7"],
+		designs: ["d1","d6","d7","d22"],
 		designLocationInformation:
 		{
 			"all" :
@@ -1110,7 +1110,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
-		designs: ["d1","d6","d7"],
+		designs: ["d1","d6","d7","d22"],
 		designLocationInformation:
 		{
 			"all" :
@@ -1131,7 +1131,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
-		designs: ["d1","d6","d7"],
+		designs: ["d1","d6","d7","d22"],
 		designLocationInformation:
 		{
 			"all" :
@@ -1152,7 +1152,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
-		designs: ["d1","d6","d7"],
+		designs: ["d1","d6","d7","d22"],
 		designLocationInformation:
 		{
 			"all" :
@@ -1173,7 +1173,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
-		designs: ["d1","d6","d7"],
+		designs: ["d1","d6","d7","d22"],
 		designLocationInformation:
 		{
 			"all" :
@@ -1194,7 +1194,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
-		designs: ["d1","d6","d7"],
+		designs: ["d1","d6","d7","d22"],
 		designLocationInformation:
 		{
 			"all" :
@@ -1215,7 +1215,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
-		designs: ["d1","d6","d7"],
+		designs: ["d1","d6","d7","d22"],
 		designLocationInformation:
 		{
 			"all" :
@@ -1236,7 +1236,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
-		designs: ["d1","d6","d7"],
+		designs: ["d1","d6","d7","d22"],
 		designLocationInformation:
 		{
 			"all" :
@@ -1257,7 +1257,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
-		designs: ["d1","d6","d7"],
+		designs: ["d1","d6","d7","d22"],
 		designLocationInformation:
 		{
 			"all" :
@@ -1278,7 +1278,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
-		designs: ["d1","d6","d7"],
+		designs: ["d1","d6","d7","d22"],
 		designLocationInformation:
 		{
 			"all" :
@@ -1325,7 +1325,7 @@ var ProductInfo =
 		stores: [""],
 		process: "ht",
 		allColors: ["royal","black","grey","navy"],
-		designs: ["d9","d11"],
+		designs: ["d9","d11","d15","d22"],
 		designLocationInformation:
 		{
             "all" :
@@ -1431,7 +1431,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "ht",
 		allColors: ["dark green","red","black","grey","white"],
-		designs: ["d9","d11"],
+		designs: ["d9","d11","d15","d22"],
 		designLocationInformation:
 		{
             "all" :
@@ -1459,7 +1459,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
-		designs: ["d1","d6","d7"],
+		designs: ["d1","d6","d7","d22"],
 		designLocationInformation:
 		{
 			"all" :
@@ -1479,7 +1479,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
-		designs: ["d1","d6","d7"],
+		designs: ["d1","d6","d7","d22"],
 		designLocationInformation:
 		{
 			"all" :
@@ -1500,7 +1500,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
-		designs: ["d1","d6","d7"],
+		designs: ["d1","d6","d7","d22"],
 		designLocationInformation:
 		{
 			"all" :
@@ -1542,7 +1542,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "ht",
 		allColors: ["black"],
-		designs: ["d1","d10"],//,"d20"],
+		designs: ["d1","d10","d20"],//,"d20"],
         overrides:
 		{
 			light: ["black"],
@@ -1573,7 +1573,7 @@ var ProductInfo =
 			light: ["royal"],
 			dark: [""]
 		},
-		designs: ["d1","d10"],//,"d20"],
+		designs: ["d1","d10","d20"],//,"d20"],
 		designLocationInformation:
 		{
 			"all" :
@@ -2173,7 +2173,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "sub",
 		allColors: ["white"],
-		designs: ["d1","d2","d5"],//,"d20"],
+		designs: ["d1","d2","d5","d20","d21","d22"],//,"d20"],
 		designLocationInformation:
 		{
 			"all" :
@@ -2193,7 +2193,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "dtg",
 		allColors: ["red","maroon","athletic gold","dark green","royal","navy","purple","black","grey","white","orange"],
-		designs: ["d1","d2","d3"],//,"d19"],
+		designs: ["d1","d2","d3","d21","d19"],//,"d19"],
 		designLocationInformation:
 		{
 			"all" :
@@ -2594,7 +2594,7 @@ var ProductInfo =
 		stores: ["emb"],
 		process: "ht",
 		allColors: ["black"],
-		designs: ["d1","d10"],//,"d20"],
+		designs: ["d1","d10","d20","d22"],//,"d20"],
 		designLocationInformation:
 		{
 			"all" :
@@ -2813,7 +2813,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "dtg",
 		allColors: ["red","royal","navy","black","grey","charcoal"],
-		designs: ["d1","d2","d3"],//,"d19"],
+		designs: ["d1","d2","d3","d19","d21"],//,"d19"],
 		designLocationInformation:
 		{
 			"all" :
@@ -3118,7 +3118,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
-		designs: ["d1","d6","d7"],
+		designs: ["d1","d6","d7","d22"],
 		designLocationInformation:
 		{
 			"all" :
@@ -3139,7 +3139,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
-		designs: ["d1","d6","d7"],
+		designs: ["d1","d6","d7","d22"],
 		designLocationInformation:
 		{
 			"all" :
@@ -3160,7 +3160,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
-		designs: ["d1","d6","d7"],
+		designs: ["d1","d6","d7","d22"],
 		designLocationInformation:
 		{
 			"all" :
@@ -3299,7 +3299,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
-		designs: ["d1","d6","d7"],
+		designs: ["d1","d6","d7","d22"],
 		designLocationInformation:
 		{
             "all" :
@@ -3330,7 +3330,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
-		designs: ["d1","d6","d7"],
+		designs: ["d1","d6","d7","d22"],
 		designLocationInformation:
 		{
             "all" :
@@ -3361,7 +3361,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
-		designs: ["d1","d6","d7"],
+		designs: ["d1","d6","d7","d22"],
 		designLocationInformation:
 		{
             "all" :
@@ -3392,7 +3392,7 @@ var ProductInfo =
 		stores: ["team"],
 		process: "uv",
 		allColors: ["white"],
-		designs: ["d1","d6","d7"],
+		designs: ["d1","d6","d7","d22"],
 		designLocationInformation:
 		{
             "all" :

@@ -1,4 +1,4 @@
-#include Utilities.jsx
+﻿#include Utilities.jsx
 #include ProductInfo.jsx
 #include OptionsWindows.jsx
 #include SaveOptions.jsx
@@ -22,7 +22,7 @@ function Main()
     }
 
     var blanksFolder = '/p/Team Stores/Pictures/'; //blank product images
-    var destFolder = Folder.desktop + '/Generated Images/';
+    var destFolder = Folder.desktop + '/GeneratedImages/';
     var f = new Folder(destFolder);
     if(!f.exists){
         f.create();
@@ -312,6 +312,14 @@ function StoreSchoolData(dataString){
                     case "d9":
                     case "d10":
                     case "d11":
+                    case "d15":
+                    case "d17":
+                    case "d18":
+                    case "d19":
+                    case "d20":
+                    case "d21":
+                    case "d22":
+                    case "d24":
                         fileName = folderPath + type[1] + "_" + currentCMH + "_" + ColorAdjust("design",stitchColor,"") + ".png";
                         return fileName;
                         break;
