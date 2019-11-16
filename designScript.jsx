@@ -2351,7 +2351,7 @@ function DesignActions(doc, design)
                 
                             var action = new File (['/p/JordanRunstein/illustratorActions/duplicateWithStroke.aia']);
             app.loadAction(action);
-            app.doScript("DWS","duplicateWithStroke");
+            //app.doScript("DWS","duplicateWithStroke");
             app.unloadAction("duplicateWithStroke", "");
             
                     
@@ -2366,17 +2366,17 @@ function DesignActions(doc, design)
             
             if(textLine2.width>textLine1.width){
                 var ableft = textLine2.controlBounds[0]*1.01;  
-                var abtop =blockletter.controlBounds[1];  
+                var abtop =blockletter.controlBounds[1] + 5;  
                 var abright = textLine2.controlBounds[2] - 25; // + right.width;  
-                var abbottom = blockletter.controlBounds[3];// - bottom.height;  
+                var abbottom = blockletter.controlBounds[3] - 5;// - bottom.height;  
                 newAB.artboardRect = [ableft, abtop, abright, abbottom];
                     }
             else{
                 var ableft = textLine1.controlBounds[0]*1.01;  
-                var abtop =blockletter.controlBounds[1];  
+                var abtop =blockletter.controlBounds[1] + 5;  
                 var abright = textLine1.controlBounds[2]-25; // + right.width;  
                 var abbottom = blockletter.controlBounds[3];// - bottom.height;  
-                newAB.artboardRect = [ableft, abtop, abright, abbottom];
+                newAB.artboardRect = [ableft, abtop, abright, abbottom] - 5;
                     }
 
 
