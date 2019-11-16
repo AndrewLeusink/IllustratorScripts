@@ -2306,8 +2306,10 @@ function DesignActions(doc, design)
             if(design == "TeamStoreDesign20"){
                 getItemByName("bigletter");
                 bigletter = app.selection[0];
+                bigletter.zOrder(ZOrderMethod.SENDTOBACK);
                 $.writeln("bigletter typename: " + bigletter.groupItems[0].textFrames[1].name);
                 blockletter = bigletter.groupItems[0].textFrames[0].createOutline();
+                blockletter.zOrder(ZOrderMethod.SENDTOBACK);
                 
                 doc.selection = null;
                 
@@ -2378,6 +2380,7 @@ function DesignActions(doc, design)
                 var abbottom = blockletter.controlBounds[3];// - bottom.height;  
                 newAB.artboardRect = [ableft, abtop, abright, abbottom];
                     }
+
 
 
                 }
@@ -2610,23 +2613,26 @@ function DesignActions(doc, design)
                         }
                     }
                 
+                             var action = new File (['/p/JordanRunstein/illustratorActions/textAreaAdjust.aia']);
+            app.loadAction(action);
+            app.doScript("TAA","textAreaAdjust");
+            app.unloadAction("textAreaAdjust","");
+                
                 //charstyle = doc.characterStyles.add("desiredText");
                 //charstyle = textLine1.textFrames[0].characterStyles;
                 
                 //charstyle.applyTo(newareatext.characters);
                 
                 posx = textLine1.position[0];
+                
                 if(len == 4){
                     
-                    scaleMatrix2 = app.getScaleMatrix(120,100);
+                    scaleMatrix2 = app.getScaleMatrix(215/textLine1.width*100,100);
                     }
                 else{
                     
-             var action = new File (['/p/JordanRunstein/illustratorActions/textAreaAdjust.aia']);
-            app.loadAction(action);
-            app.doScript("TAA","textAreaAdjust");
-            app.unloadAction("textAreaAdjust","");
-            scaleMatrix2 = app.getScaleMatrix(100,100);
+
+            scaleMatrix2 = app.getScaleMatrix(215/textLine1.width*100,100);
 
                     }
                     
@@ -2643,7 +2649,7 @@ function DesignActions(doc, design)
                 resizeArtboard(doc,bigGroup,bigGroup,bigGroup,bigGroup);
                 }
             
-    
+    //error();
 }
 
 
